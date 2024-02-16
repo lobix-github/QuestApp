@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&amp;nbsp;" xml:space="preserve">
+    <value>&amp;nbsp;</value>
+  </data>
+  <data name="CitySizeId_Below10k" xml:space="preserve">
+    <value>do 10.000 mieszkańców</value>
+  </data>
+  <data name="CitySizeId_Between10_50k" xml:space="preserve">
+    <value>10.000 - 50.000 mieszkańców</value>
+  </data>
+  <data name="CitySizeId_Between200_500k" xml:space="preserve">
+    <value>200.000 - 500.000 mieszkańców</value>
+  </data>
+  <data name="CitySizeId_Between500_1000k" xml:space="preserve">
+    <value>500.000 - 1.000.000 mieszkańców</value>
+  </data>
+  <data name="CitySizeId_Between50_200k" xml:space="preserve">
+    <value>50.000 - 200.000 mieszkańców</value>
+  </data>
+  <data name="CitySizeId_Over1000k" xml:space="preserve">
+    <value>powyżej 1.000.000 mieszkańców</value>
+  </data>
+  <data name="CountryId_BE" xml:space="preserve">
+    <value>Belgia</value>
+  </data>
+  <data name="CountryId_DE" xml:space="preserve">
+    <value>Niemcy</value>
+  </data>
+  <data name="CountryId_ES" xml:space="preserve">
+    <value>Hiszpania</value>
+  </data>
+  <data name="CountryId_GB" xml:space="preserve">
+    <value>Wielka Brytania</value>
+  </data>
+  <data name="CountryId_NL" xml:space="preserve">
+    <value>Niderlandy</value>
+  </data>
+  <data name="CountryId_Other" xml:space="preserve">
+    <value>Inny</value>
+  </data>
+  <data name="CountryId_PL" xml:space="preserve">
+    <value>Polska</value>
+  </data>
+  <data name="DropDown Selected Items" xml:space="preserve">
+    <value>zaznaczonych</value>
+  </data>
+  <data name="EnterpriseRoleId_CoOwnerExecutiveManager" xml:space="preserve">
+    <value>współwłaściciel / dyrektor zarządzający</value>
+  </data>
+  <data name="EnterpriseRoleId_DepartmentManager" xml:space="preserve">
+    <value>kierownik / manager (np. zespołu, działu lub oddziału)</value>
+  </data>
+  <data name="EnterpriseRoleId_ExecutiveManager" xml:space="preserve">
+    <value>dyrektor zarządzający</value>
+  </data>
+  <data name="EnterpriseRoleId_Other" xml:space="preserve">
+    <value>inny</value>
+  </data>
+  <data name="EnterpriseRoleId_OwnerManager" xml:space="preserve">
+    <value>jedyny właściciel</value>
+  </data>
+  <data name="General AnyNone Graph Title" xml:space="preserve">
+    <value>Wskaźnik Zaangażowania w Proces Innowacyjny</value>
+  </data>
+  <data name="General Double AnyNone Graph Title" xml:space="preserve">
+    <value>Wskaźnik Pokrycia Cyfrowego Procesu Innowacyjnego</value>
+  </data>
+  <data name="General Graph Title" xml:space="preserve">
+    <value>Wskaźnik Intensywności Cyfrowej Procesu Innowacyjnego</value>
+  </data>
+  <data name="Graph Label Average" xml:space="preserve">
+    <value>Średnia     </value>
+  </data>
+  <data name="Graph Label High" xml:space="preserve">
+    <value>Innowatorzy Cyfrowi     </value>
+  </data>
+  <data name="Graph Label Low" xml:space="preserve">
+    <value>Maruderzy Cyfrowi</value>
+  </data>
+  <data name="Graph Label User" xml:space="preserve">
+    <value>Twój Wskaźnik     </value>
+  </data>
+  <data name="NumberOfEmployeesId_0_1" xml:space="preserve">
+    <value>0-1</value>
+  </data>
+  <data name="NumberOfEmployeesId_100_249" xml:space="preserve">
+    <value>100-249</value>
+  </data>
+  <data name="NumberOfEmployeesId_10_19" xml:space="preserve">
+    <value>10-19</value>
+  </data>
+  <data name="NumberOfEmployeesId_20_49" xml:space="preserve">
+    <value>20-49</value>
+  </data>
+  <data name="NumberOfEmployeesId_250AndMore" xml:space="preserve">
+    <value>250 i więcej</value>
+  </data>
+  <data name="NumberOfEmployeesId_2_9" xml:space="preserve">
+    <value>2-9</value>
+  </data>
+  <data name="NumberOfEmployeesId_50_99" xml:space="preserve">
+    <value>50-99</value>
+  </data>
+  <data name="OperationTimeId_0_1" xml:space="preserve">
+    <value>0-1 lat</value>
+  </data>
+  <data name="OperationTimeId_100AndMore" xml:space="preserve">
+    <value>100 lat i więcej</value>
+  </data>
+  <data name="OperationTimeId_21_99" xml:space="preserve">
+    <value>20-99 lat</value>
+  </data>
+  <data name="OperationTimeId_2_7" xml:space="preserve">
+    <value>2-7 lat</value>
+  </data>
+  <data name="OperationTimeId_8_20" xml:space="preserve">
+    <value>8-20 lat</value>
+  </data>
+  <data name="SectorId_AccommodationAndFoodService" xml:space="preserve">
+    <value>(I) Działalność związana z zakwaterowaniem i usługami gastronomicznymi</value>
+  </data>
+  <data name="SectorId_AdministrativeAndSupportService" xml:space="preserve">
+    <value>(N) Działalność w zakresie usług administrowania i działalność wspierająca</value>
+  </data>
+  <data name="SectorId_AgricultureForestryAndFishing" xml:space="preserve">
+    <value>(A) Rolnictwo, leśnictwo i rybactwo</value>
+  </data>
+  <data name="SectorId_ArtsEntertainmentAndRecreational" xml:space="preserve">
+    <value>(R) Działalność związana z kulturą, rozrywką i rekreacją</value>
+  </data>
+  <data name="SectorId_Construction" xml:space="preserve">
+    <value>(F) Budownictwo</value>
+  </data>
+  <data name="SectorId_Education" xml:space="preserve">
+    <value>(P) Edukacja</value>
+  </data>
+  <data name="SectorId_ElectricityGasSteamAndAirConditioningSupply" xml:space="preserve">
+    <value>(D) Wytwarzanie i zaopatrywanie w energię elektryczną, gaz, parę wodną i powietrze do układów klimatyzacyjnych</value>
+  </data>
+  <data name="SectorId_ExtraterritorialOrganisationsAndBodies" xml:space="preserve">
+    <value>(U) Organizacje i zespoły eksterytorialne</value>
+  </data>
+  <data name="SectorId_FinanceAndInsurance" xml:space="preserve">
+    <value>(K) Działalność finansowa i ubezpieczeniowa</value>
+  </data>
+  <data name="SectorId_HouseholdsAsEmployers" xml:space="preserve">
+    <value>(T) Gospodarstwa domowe zatrudniające pracowników; gospodarstwa domowe produkujące wyroby i świadczące usługi na własne potrzeby</value>
+  </data>
+  <data name="SectorId_HumanHealthAndSocialWork" xml:space="preserve">
+    <value>(Q) Opieka zdrowotna i pomoc społeczna</value>
+  </data>
+  <data name="SectorId_InformationAndCommunication" xml:space="preserve">
+    <value>(J) Informacja i komunikacja</value>
+  </data>
+  <data name="SectorId_Manufacturing" xml:space="preserve">
+    <value>(C) Przetwórstwo przemysłowe</value>
+  </data>
+  <data name="SectorId_MiningAndQuarrying" xml:space="preserve">
+    <value>(B) Górnictwo i wydobywanie</value>
+  </data>
+  <data name="SectorId_Other" xml:space="preserve">
+    <value>(S) Pozostała działalność usługowa</value>
+  </data>
+  <data name="SectorId_ProfessionalScientificAndTechnical" xml:space="preserve">
+    <value>(M) Działalność profesjonalna, naukowa i techniczna</value>
+  </data>
+  <data name="SectorId_PublicAdministrationAndDefence" xml:space="preserve">
+    <value>(O) Administracja publiczna i obrona narodowa; obowiązkowe ubezpieczenia społeczne</value>
+  </data>
+  <data name="SectorId_RealEstate" xml:space="preserve">
+    <value>(L) Działalność związana z obsługą rynku nieruchomości</value>
+  </data>
+  <data name="SectorId_TransportAndStorage" xml:space="preserve">
+    <value>(H) Transport i gospodarka magazynowa</value>
+  </data>
+  <data name="SectorId_WaterSupply" xml:space="preserve">
+    <value>(E) Dostawa wody; gospodarowanie ściekami i odpadami oraz działalność związana z rekultywacją</value>
+  </data>
+  <data name="SectorId_WholesaleAndRetailTrade" xml:space="preserve">
+    <value>(G) Handel hurtowy i detaliczny; naprawa pojazdów samochodowych i motocykli</value>
+  </data>
+  <data name="ServiceAreaId_AccommodationAndFoodService" xml:space="preserve">
+    <value>(I) Działalność związana z zakwaterowaniem i usługami gastronomicznymi</value>
+  </data>
+  <data name="ServiceAreaId_ArtsEntertainmentAndRecreational" xml:space="preserve">
+    <value>(R) Działalność związana z kulturą, rozrywką i rekreacją</value>
+  </data>
+  <data name="ServiceAreaId_Construction" xml:space="preserve">
+    <value>(F) Budownictwo</value>
+  </data>
+  <data name="ServiceAreaId_Education" xml:space="preserve">
+    <value>(P) Edukacja</value>
+  </data>
+  <data name="ServiceAreaId_ElectricityGasSteamAndAirConditioningSupply" xml:space="preserve">
+    <value>(D) Wytwarzanie i zaopatrywanie w energię elektryczną, gaz, parę wodną i powietrze do układów klimatyzacyjnych</value>
+  </data>
+  <data name="ServiceAreaId_FinanceAndInsurance" xml:space="preserve">
+    <value>(K) Działalność finansowa i ubezpieczeniowa</value>
+  </data>
+  <data name="ServiceAreaId_HumanHealthAndSocialWork" xml:space="preserve">
+    <value>(Q) Opieka zdrowotna i pomoc społeczna</value>
+  </data>
+  <data name="ServiceAreaId_InformationAndCommunication" xml:space="preserve">
+    <value>(J) Informacja i komunikacja</value>
+  </data>
+  <data name="ServiceAreaId_None" xml:space="preserve">
+    <value>Żadne</value>
+  </data>
+  <data name="ServiceAreaId_Other" xml:space="preserve">
+    <value>(S) Pozostała działalność usługowa</value>
+  </data>
+  <data name="ServiceAreaId_ProfessionalScientificAndTechnical" xml:space="preserve">
+    <value>(M) Działalność profesjonalna, naukowa i techniczna</value>
+  </data>
+  <data name="ServiceAreaId_RealEstate" xml:space="preserve">
+    <value>(L) Działalność związana z obsługą rynku nieruchomości</value>
+  </data>
+  <data name="ServiceAreaId_TransportAndStorage" xml:space="preserve">
+    <value>(H) Transport i gospodarka magazynowa</value>
+  </data>
+  <data name="ServiceAreaId_WaterSupply" xml:space="preserve">
+    <value>(E) Dostawa wody; gospodarowanie ściekami i odpadami oraz działalność związana z rekultywacją</value>
+  </data>
+  <data name="Summary Ratio Ttile" xml:space="preserve">
+    <value>Wskaźnik Cyfryzacji i Zaangażowania (D/E Ratio)</value>
+  </data>
+  <data name="Total Score (Average)" xml:space="preserve">
+    <value>Średni wynik ogółem</value>
+  </data>
+  <data name="TurnoverId_10_50" xml:space="preserve">
+    <value>10-50 mln euro</value>
+  </data>
+  <data name="TurnoverId_2_10" xml:space="preserve">
+    <value>2-10 mln euro</value>
+  </data>
+  <data name="TurnoverId_LessThan2" xml:space="preserve">
+    <value>&lt;2 mln euro</value>
+  </data>
+  <data name="TurnoverId_Over50" xml:space="preserve">
+    <value>powyżej 50 mln euro</value>
+  </data>
+  <data name="User AnyNone Bubble Graph Title" xml:space="preserve">
+    <value>Twój Wskaźnik Zaangażowania w Proces Innowacyjny</value>
+  </data>
+  <data name="User AnyNone Graph Title" xml:space="preserve">
+    <value>Twój Wskaźnik Zaangażowania w Proces Innowacyjny</value>
+  </data>
+  <data name="User Bubble Graph Title" xml:space="preserve">
+    <value>Twój Wskaźnik Intensywności Cyfrowej Procesu Innowacyjnego</value>
+  </data>
+  <data name="User Double AnyNone Bubble Graph Title" xml:space="preserve">
+    <value>Twój Wskaźnik Pokrycia Cyfrowego Procesu Innowacyjnego</value>
+  </data>
+  <data name="User Double AnyNone Graph Title" xml:space="preserve">
+    <value>Twój Wskaźnik Pokrycia Cyfrowego Procesu Innowacyjnego</value>
+  </data>
+  <data name="User Graph Title" xml:space="preserve">
+    <value>Twój Wskaźnik Intensywności Cyfrowej Procesu Innowacyjnego</value>
+  </data>
+  <data name="Your Industry Score (Average)" xml:space="preserve">
+    <value>Średni wynik w twoim sektorze</value>
+  </data>
+  <data name="Your Score" xml:space="preserve">
+    <value>Twój wynik</value>
+  </data>
+</root>

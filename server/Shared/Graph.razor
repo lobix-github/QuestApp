@@ -1,0 +1,33 @@
+﻿@inherits ComponentBase
+
+@using Syncfusion.Blazor.Charts
+
+@inject IStringLocalizer<QuestApp.Pages.SharedRes> SharedResL
+
+<SfChart Title=@Title Palettes="@palettes">
+    <ChartTooltipSettings Enable="true">
+    </ChartTooltipSettings>
+    <ChartPrimaryXAxis Interval="1" Coefficient="100" LabelPlacement="LabelPlacement.OnTicks" ValueType="Syncfusion.Blazor.Charts.ValueType.Category"></ChartPrimaryXAxis>
+    <ChartPrimaryYAxis LabelFormat="{value}" Maximum="10" Interval="2" />
+    <ChartSeriesCollection>
+        <ChartSeries DataSource="@ChartPoints" Name="@SharedResL["Graph Label High"]" XName="Category" Width="2" YName="High" Type="@SeriesType" DrawType="ChartDrawType.Spline" />
+        <ChartSeries DataSource="@ChartPoints" Opacity=0.5 Name="@CustomLabel" XName="Category" Width="2" YName="Custom" Type="@SeriesType" DrawType="@ChartDrawType" />
+        <ChartSeries DataSource="@ChartPoints" Name="@SharedResL["Graph Label Low"]" XName="Category" Width="2" YName="Low" Type="@SeriesType" DrawType="ChartDrawType.Spline" />
+    </ChartSeriesCollection>
+</SfChart>
+
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public string CustomLabel { get; set; }
+    [Parameter] public IEnumerable<object> ChartPoints { get; set; }
+    [Parameter] public ChartDrawType ChartDrawType { get; set; }
+    [Parameter] public string CustomColor { get; set; }
+
+    private ChartSeriesType SeriesType { get; set; } = ChartSeriesType.Polar;
+    private string[] palettes = new string[0];
+
+    protected override void OnInitialized()
+    {
+        palettes = new[] { "#5B74AE", CustomColor, "#7F7F7F" };
+    }
+}

@@ -1,0 +1,87 @@
+﻿@page "/survey"
+@page "/survey/{index:int}"
+
+@using QuestApp.DTO
+
+@attribute [Authorize]
+
+<AnchorNavigation @ref="navigation" />
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="col-10 offset-1">
+            <RadzenHeading Size="H1" Text="@L["Welcome"]" />
+            @*<RadzenHeading Size="H2" Text="@quest.Description" Style="margin-top: 2em" />*@
+
+            <RadzenTemplateForm TItem="QuestionnaireDTO" Data="@quest" Submit="@HandleValidSubmit">
+                <ChildContent Context="Another_Name">
+
+                    <RadzenHeading Size="H2" Text="@(section.Title)" />
+                    <div>@((MarkupString)section.Text)</div>
+                    <div style="line-height: 1.5"><small>@((MarkupString)section.Comment)</small></div>
+
+                    <h1 id="category-start">&nbsp;</h1>
+                    <RadzenPanel AllowCollapse="true" Style="margin-bottom: 2em">
+                        <ChildContent>
+                            <RadzenLabel Text="@(category.Text)" />
+                            <div><small>@((MarkupString)category.Comment)</small></div>
+                            <h4 style="margin-top: 1rem">@((MarkupString)category.Prequestion)</h4>
+                            <div style="line-height: 1.5"><small>@((MarkupString)category.PrequestionComment)</small></div>
+
+                            @foreach (var question in category.Questions.OrderBy(x => x.Index))
+                            {
+                                <div class="d-flex question-row">
+                                    <div class="d-flex question-col">
+                                        <div><small>@((MarkupString)question.Text)</small></div>
+                                        <RadzenHeading Size="H6" Text="@(question.Comment)" />
+                                    </div>
+
+                                    <RadzenRadioButtonList class="d-flex answers-row" TValue="int" @bind-Value=@(question.SelectedAnswerIndex) Change=@OnAnswerChange>
+                                        <Items>
+                                            @foreach (var answer in question.Answers.OrderBy(x => x.Index))
+                                            {
+                                                <RadzenRadioButtonListItem class="d-flex answer-row" style="@(styleText(answer.Index, question.Answers.Count))" Text="@(answer.Text)" Value="@(answer.Index)" />
+                                            }
+                                        </Items>
+                                    </RadzenRadioButtonList>
+                                </div>
+                            }
+                        </ChildContent>
+                        <HeaderTemplate>
+                            <RadzenHeading Size="H2" Text="@(category.Title)" />
+                        </HeaderTemplate>
+                    </RadzenPanel>
+
+                    <div class="row">
+                        <div class="col-5">
+                            <RadzenButton ButtonStyle="ButtonStyle.Primary" Icon="arrow_back_ios" Disabled="@isPrevDisabled" Text="@L["Prev"]" Click="@(() => NavigationManager.NavigateTo($"/survey/{Index - 1}"))" />
+                            <RadzenButton ButtonStyle="ButtonStyle.Primary" Icon="arrow_forward_ios" Disabled="@isNextDisabled" Text="@L["Next"]" Click="@(() => NavigationManager.NavigateTo($"/survey/{Index + 1}"))" />
+                        </div>
+                        <div class="col-2">
+                            <div class="d-flex flex-row justify-content-center align-items-center" style="height: 100%">
+                                <b>@($"{Index} / {categories.Count}")</b>
+                            </div>
+                        </div>
+                        <div class="col-5 d-flex justify-content-end">
+                            <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="add_task" Disabled="@isSubmitDisabled" Text="@L["Submit"]" />
+                        </div>
+                    </div>
+
+                </ChildContent>
+            </RadzenTemplateForm>
+        </div>
+    </ChildContent>
+</RadzenContent>
+
+@code {
+    private bool isNotFirst(int index) => index != 1;
+
+    private string styleText(int index, int count) => $"width: {100 / count}%; background-color: {colors[index]};";
+    private Dictionary<int, string> colors = new Dictionary<int, string>() {
+        { 1, "white" },
+        { 2, "white" },
+        { 3, "#a9d8e4" },
+        { 4, "#71cddc" },
+        { 5, "#5b74ae" },
+    };
+}

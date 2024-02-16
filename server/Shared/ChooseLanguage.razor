@@ -1,0 +1,55 @@
+﻿@using Microsoft.Extensions.Configuration
+@using Microsoft.Extensions.Localization
+
+@inject IConfiguration Configuration
+@inject NavigationManager NavigationManager
+
+@inject IStringLocalizer<App> L
+
+@if (cultures != null)
+{
+    <form class="form-inline">
+        <select class="form-control mr-5" @bind="selectedCulture">
+            @foreach (var culture in cultures)
+            {
+                <option value="@culture.Key">@L[@culture.Value]</option>
+            }
+        </select>
+    </form>
+}
+
+@code {
+    private string _selectedCulture;
+    private string selectedCulture
+    {
+        get => _selectedCulture;
+        set
+        {
+            if (_selectedCulture != value)
+            {
+                _selectedCulture = value;
+                RequestCultureChange();
+            }
+        }
+    }
+
+    private Dictionary<string, string> cultures;
+
+    protected override void OnInitialized()
+    {
+        cultures = Extensions.CULTURES;
+        _selectedCulture = Extensions.ShortUICultureNameFromCurrent;
+    }
+
+    private void RequestCultureChange()
+    {
+        if (string.IsNullOrEmpty(selectedCulture)) return;
+
+        var uri = new Uri(NavigationManager.Uri)
+            .GetComponents(UriComponents.PathAndQuery, UriFormat.Unescaped);
+
+        var query = $"?culture={Uri.EscapeDataString(selectedCulture)}&redirectUri={Uri.EscapeDataString(uri)}";
+
+        NavigationManager.NavigateTo("/Culture/SetCulture" + query, forceLoad: true);
+    }
+}

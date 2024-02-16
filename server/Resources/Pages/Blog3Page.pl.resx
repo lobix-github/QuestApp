@@ -1,0 +1,474 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Author" xml:space="preserve">
+    <value>Irene Priego Moreno</value>
+  </data>
+  <data name="Source" xml:space="preserve">
+    <value>Source:</value>
+  </data>
+  <data name="Table1_header_1" xml:space="preserve">
+    <value>Strategic benefits</value>
+  </data>
+  <data name="Table1_header_2" xml:space="preserve">
+    <value>Tactical benefits</value>
+  </data>
+  <data name="Table1_header_3" xml:space="preserve">
+    <value>Operational benefits</value>
+  </data>
+  <data name="Table1_row1_col1" xml:space="preserve">
+    <value>Reduced marketing costs</value>
+  </data>
+  <data name="Table1_row1_col2" xml:space="preserve">
+    <value>Improved response to changes</value>
+  </data>
+  <data name="Table1_row1_col3" xml:space="preserve">
+    <value>Improved data management</value>
+  </data>
+  <data name="Table1_row2_col1" xml:space="preserve">
+    <value>Improved market share</value>
+  </data>
+  <data name="Table1_row2_col2" xml:space="preserve">
+    <value>Improved teamwork</value>
+  </data>
+  <data name="Table1_row2_col3" xml:space="preserve">
+    <value>Improved communication</value>
+  </data>
+  <data name="Table1_row3_col1" xml:space="preserve">
+    <value>Improved customer relations</value>
+  </data>
+  <data name="Table1_row3_col2" xml:space="preserve">
+    <value>Reduced time to compile tenders</value>
+  </data>
+  <data name="Table1_row3_col3" xml:space="preserve">
+    <value>Improved decision-making</value>
+  </data>
+  <data name="Table1_row4_col1" xml:space="preserve">
+    <value>Enhanced competitive advantage</value>
+  </data>
+  <data name="Table1_row4_col2" xml:space="preserve">
+    <value>Reduced time to prepare cost plans</value>
+  </data>
+  <data name="Table1_row4_col3" xml:space="preserve">
+    <value>Reduce labor costs</value>
+  </data>
+  <data name="Table1_row5_col1" xml:space="preserve">
+    <value>Improved organizational and process flexibility</value>
+  </data>
+  <data name="Table1_row5_col2" xml:space="preserve">
+    <value>Improved contract administration</value>
+  </data>
+  <data name="Table1_row5_col3" xml:space="preserve">
+    <value>Improved quality of output</value>
+  </data>
+  <data name="Table2_header_1" xml:space="preserve">
+    <value>Name of IT tools</value>
+  </data>
+  <data name="Table2_header_2" xml:space="preserve">
+    <value>Main characteristics</value>
+  </data>
+  <data name="Table2_header_3" xml:space="preserve">
+    <value>Pros</value>
+  </data>
+  <data name="Table2_header_4" xml:space="preserve">
+    <value>Cons</value>
+  </data>
+  <data name="Table2_row1_col1" xml:space="preserve">
+    <value>Qmarkets</value>
+  </data>
+  <data name="Table2_row1_col2_1" xml:space="preserve">
+    <value>Ready for larger organizations</value>
+  </data>
+  <data name="Table2_row1_col3_1" xml:space="preserve">
+    <value>Flexible customer service that is ready at a moment’s notice</value>
+  </data>
+  <data name="Table2_row1_col3_2" xml:space="preserve">
+    <value>Good reporting on platform activity statistics</value>
+  </data>
+  <data name="Table2_row1_col3_3" xml:space="preserve">
+    <value>Reponsive content management</value>
+  </data>
+  <data name="Table2_row1_col4_1" xml:space="preserve">
+    <value>Unintuitive due to heavy feature load</value>
+  </data>
+  <data name="Table2_row1_col4_2" xml:space="preserve">
+    <value>Requires extensive knowledge to use</value>
+  </data>
+  <data name="Table2_row1_col4_3" xml:space="preserve">
+    <value>Problems with multi-language support</value>
+  </data>
+  <data name="Table2_row2_col1" xml:space="preserve">
+    <value>Ideawake</value>
+  </data>
+  <data name="Table2_row2_col2_1" xml:space="preserve">
+    <value>It is good for beginners</value>
+  </data>
+  <data name="Table2_row2_col3_1" xml:space="preserve">
+    <value>Doesn’t require extensive implementation projects to get started with</value>
+  </data>
+  <data name="Table2_row2_col3_2" xml:space="preserve">
+    <value>Allows people from different functions to connect and work together</value>
+  </data>
+  <data name="Table2_row2_col3_3" xml:space="preserve">
+    <value>Visually pleasing platform</value>
+  </data>
+  <data name="Table2_row2_col4_1" xml:space="preserve">
+    <value>Limited in terms of features and possible use cases</value>
+  </data>
+  <data name="Table2_row2_col4_2" xml:space="preserve">
+    <value>Does not have a process for evaluating ideas based on their viability</value>
+  </data>
+  <data name="Table2_row2_col4_3" xml:space="preserve">
+    <value>Minor problems &amp; bugs may be encountered in use due to a lacking internal testing process</value>
+  </data>
+  <data name="Table2_row3_col1" xml:space="preserve">
+    <value>Viima</value>
+  </data>
+  <data name="Table2_row3_col2_1" xml:space="preserve">
+    <value>Easily be used from starups to larger organizations</value>
+  </data>
+  <data name="Table2_row3_col3_1" xml:space="preserve">
+    <value>Intuitive &amp; engaging UI (user interface) that helps maximize user participation levels and thus drives results</value>
+  </data>
+  <data name="Table2_row3_col3_2" xml:space="preserve">
+    <value>Starting out doesn’t require any previous knowledge and is the quickest to implement</value>
+  </data>
+  <data name="Table2_row3_col4_1" xml:space="preserve">
+    <value>Mobile UI doesn’t yet support all of the features of the desktop browser version</value>
+  </data>
+  <data name="Table2_row3_col4_2" xml:space="preserve">
+    <value>Doesn’t support customer specific subdomain addresses</value>
+  </data>
+  <data name="Table2_row3_col4_3" xml:space="preserve">
+    <value>Tutorial videos are not publicly available</value>
+  </data>
+  <data name="Table2_row4_col1" xml:space="preserve">
+    <value>Inno360</value>
+  </data>
+  <data name="Table2_row4_col2_1" xml:space="preserve">
+    <value>Creating disruptive innovation in an organization by searching for opportunities and ideas on the web</value>
+  </data>
+  <data name="Table2_row4_col3_1" xml:space="preserve">
+    <value>Helps find new and bold ideas</value>
+  </data>
+  <data name="Table2_row4_col3_2" xml:space="preserve">
+    <value>Intuitive &amp; visually engaging platform</value>
+  </data>
+  <data name="Table2_row4_col3_3" xml:space="preserve">
+    <value>Doesn’t heavily rely on internal participation</value>
+  </data>
+  <data name="Table2_row4_col4_1" xml:space="preserve">
+    <value>Cannot be used to engage employees</value>
+  </data>
+  <data name="Table2_row4_col4_2" xml:space="preserve">
+    <value>A very limited way of using that mainly relies on utilizing existing information</value>
+  </data>
+  <data name="Text0_01" xml:space="preserve">
+    <value>First, we think that it would be important to determine what will be the structure I will follow during my essay as well as the questions which I would like to answer with it. Maybe, doing that it would be clearer and easier to understand my reflections.</value>
+  </data>
+  <data name="Text0_02" xml:space="preserve">
+    <value>What does innovation project management and evaluation mean? Is it important nowadays being implemented by companies?</value>
+  </data>
+  <data name="Text0_03" xml:space="preserve">
+    <value>What is the currently / nowadays the needs of innovation projects management and evaluation?</value>
+  </data>
+  <data name="Text0_04" xml:space="preserve">
+    <value>How can this IT tools help/improve/solve the needs? Any IT tools can solve these needs? What should be the characteristics of this IT to allow implement innovation projects?</value>
+  </data>
+  <data name="Text0_05" xml:space="preserve">
+    <value>If the companies using this IT tools in their innovation projects, can they obtain more benefits? I mean what is the final impact or benefit to the company for use this IT tools? Is it worth to spend the money or invest in it? Could any firm deal with price?</value>
+  </data>
+  <data name="Text0_06" xml:space="preserve">
+    <value>Why nowadays is very important to improve and have the best innovation projects management and evaluation? What would be the benefits?</value>
+  </data>
+  <data name="Text0_07" xml:space="preserve">
+    <value>As we have mentioned before, is important to keep in mind that innovation project management provide the tools, insight, and metrics need to successfully manage innovation project as well as helping readers identify problems in their organization, conceive elegant solutions, and, when necessary, promote changes to their organizational culture. Anyway, we should point out how relevant it can be for companies implement innovation projects, and for example, according to McKinsey, 84% of executives say that their future success is dependent on innovation, because it allows companies to stay competitive in the market. Basically, introducing something new (product, service) or transforming something to offer it different way will enable the company’s progress and growth. For do it, the firm will have to prepare the document in which proposing implementation methods of innovation activity programs, resulting in creation of new or significantly improved products, technologies, processes and services. Certainly, there have been many companies that have developed numerous innovation projects, which have brought them success, such as Google, Facebook or Amazon.</value>
+  </data>
+  <data name="Text0_08" xml:space="preserve">
+    <value>Even considering that one of the main characteristics of today's market is the massive competition, it is imperative to come up with innovative ideas to implement to obtain a new opportunity for expansion, either by offering something different to consumers or even the same product but in a new sector.  The aim is to do something that was not done before. This leads to progress and development.</value>
+  </data>
+  <data name="Text0_09" xml:space="preserve">
+    <value>By the way, we are aware of is not the same innovation project than conventional project as well as its management is completely different. For example, one conventional project could be an expansion of the warehouse while as innovation project we can find the launch of new sugar free soft drink by one beverage companies. Besides, many of their differences could be the following:</value>
+  </data>
+  <data name="Text0_10" xml:space="preserve">
+    <value>Conventional projects should have clearly defined objectives. Innovation projects, usually, starts with weakly defined, sometimes ambiguous objectives, which become clearer in the following phases of project.</value>
+  </data>
+  <data name="Text0_11" xml:space="preserve">
+    <value>Project teams are comprised of people of different professions (knowledge and skills, etc.), among whom should exist high level of trust.</value>
+  </data>
+  <data name="Text0_12" xml:space="preserve">
+    <value>Considering the failure as a possible outcome, innovation project teams should with great concern take into consideration risk management.</value>
+  </data>
+  <data name="Text0_13" xml:space="preserve">
+    <value>The management of process conventional project is quicklier, easier, less risk to implement and develop than other about innovation project as well as the evaluation of them would be different. For instance, the company would be more carefully if it is evaluating its innovation project because the risk that it would be fail in the market or having one mistake is higher than others one. The point is the uncertainty of its success and its good adaptability in the market.</value>
+  </data>
+  <data name="Text0_14" xml:space="preserve">
+    <value>Therefore, they are different and for this reason they have different needs. Exactly, many of needs innovation project management could be:</value>
+  </data>
+  <data name="Text0_15" xml:space="preserve">
+    <value>Need to have creative and innovative ideas.</value>
+  </data>
+  <data name="Text0_16" xml:space="preserve">
+    <value>Need to maintain good, fluid, and open communication between team members to allow for the sharing and discussion of thoughts.</value>
+  </data>
+  <data name="Text0_17" xml:space="preserve">
+    <value>Need to prioritise ideas according to the mission, vision, values, principles, size, structure of the company and the market in which it operates.</value>
+  </data>
+  <data name="Text0_18" xml:space="preserve">
+    <value>Need to carry out an analysis of the expected consequences or results of the innovative project.</value>
+  </data>
+  <data name="Text0_19" xml:space="preserve">
+    <value>Need to set minimum objectives expected with the project (achieving a higher market share, a competitive advantage, capturing a new type of customer, idealising our consumers, 20% increase in sales for the year of the launch of the product in a new sector or of a new product in the same sector).</value>
+  </data>
+  <data name="Text0_20" xml:space="preserve">
+    <value>Need to study the probability of failure and minimise risk.</value>
+  </data>
+  <data name="Text0_21" xml:space="preserve">
+    <value>Need for a correct, detailed, and thorough post-launch or post-implementation evaluation of the project.</value>
+  </data>
+  <data name="Text0_22" xml:space="preserve">
+    <value>These needs are very specific and sensitive. In addition, is easy/logical to think that it is required a long time and detailed process since we had our creative or innovative ideas until we prioritize, compare between them as well as analyse, develop, implement, launch, evaluate them and, finally, achieve our expected objectives.</value>
+  </data>
+  <data name="Text0_23" xml:space="preserve">
+    <value>Thus, it would be necessary to have IT tools in advance with which to carry out this whole process in a faster, simpler, smoother, more fluid and safer way, mitigating the risk of failure. Also, as we can see in this picture, we are able to know three key digital transformation statistics very interesting about implementation of this new way to manage or carry out organizations and companies.</value>
+  </data>
+  <data name="Text0_24" xml:space="preserve">
+    <value>However, we know that not all innovative ideas or innovation projects are successful. There are many factors and variants that can affect the development of an innovation project, which must be considered by the company when structuring or managing its innovation project. Thus, to increase the probability of success, managers should previously analyse and study all the stages of the innovation process (opportunity identification, ideation &amp; Idea management, concept development, development, testing and validating pilot service, launch) as well as carry out a correct evaluation of the same. It is not only important to get a good innovative idea, develop it and launch it. It is also necessary to analyse the post-launch, how it has been accepted by the sector or market in which it operates, if the results finally obtained are in line with those previously expected.</value>
+  </data>
+  <data name="Text0_25" xml:space="preserve">
+    <value>Thus, the management and evaluation of these innovative projects is not easy, nor is getting the idea that allows you to innovate. That is why technological and digital tools have been created to speed up the whole process and guarantee its success. Why technological tools? Easy and simple. We are in the digital and technological era, the information y electronic data is programmed, stored, and saved, and above all computerised in a secure cloud. Considering all the advantages that this entails, it was to be expected that the tool used to provide companies with a good management and evaluation of innovative projects would be technological. It’s been said that data is what powers industries worldwide. Nevertheless, few businesses (large or small) can remain competitive without the ability to collect data and turn it into useful information. IT provides the means to develop, process, analyse, exchange, store and secure it. That’s why is relevant to implement tools which would be specifically about information technology.</value>
+  </data>
+  <data name="Text0_26" xml:space="preserve">
+    <value>By the way, maybe to understand better how IT tools in general will be able to provide/support/manage/help/solve/cover/ensure the needs of innovation projects management and evaluation, it would be interesting to answer these main questions:</value>
+  </data>
+  <data name="Text0_27" xml:space="preserve">
+    <value>What are they like or how they are? What are their main characteristics and possible benefits to using them?</value>
+  </data>
+  <data name="Text0_28" xml:space="preserve">
+    <value>How can these tools support/cover/meet/satisfy/fulfil these needs?</value>
+  </data>
+  <data name="Text0_29" xml:space="preserve">
+    <value>Is any successful proof of that?</value>
+  </data>
+  <data name="Text0_30" xml:space="preserve">
+    <value>To answer the first question proposed information technology (IT) tools can provide the following two main advantages to any company:</value>
+  </data>
+  <data name="Text0_31" xml:space="preserve">
+    <value>Improve team unity. Consolidating IT tools also breaks down walls between various departments, makes collaborating easier and allows employees to make suggestions more efficiently. In addition, if the company doesn’t try improving this point, it’s likely that the business will operate less efficiently. Time is lost and projects delayed through a lack of communication and failure to engage key functions and stakeholders at the correct stage.</value>
+  </data>
+  <data name="Text0_32" xml:space="preserve">
+    <value>Increased productivity. Employees’ time can be put to better use if they can get their work done with a system that has everything, they need in one location. Therefore, saving time it will allow increase the efficiently as they can achieve their results/goals by putting the resources without wasting effort or energy. So, it will allow using and spending their saving time in other activities, skill, or ideas. Development is achieved in this way.</value>
+  </data>
+  <data name="Text0_33" xml:space="preserve">
+    <value>By the way, as we can see in the table, we can obtain more different types of benefits (Strategic, tactical, operational) for using information technology tools according with the report about</value>
+  </data>
+  <data name="Text0_34" xml:space="preserve">
+    <value>the benefits of IT tools in innovation process for SME sustainability.</value>
+  </data>
+  <data name="Text0_35" xml:space="preserve">
+    <value>So, information technology tools fosters innovation in business. Innovation results in smarter apps, improved data storage, faster processing, and wider information distribution. Innovation makes businesses run more efficiently. And innovation increases value, enhances quality, and boosts productivity. By the way, innovation through information technology has created the following radical changes in business:</value>
+  </data>
+  <data name="Text0_36" xml:space="preserve">
+    <value>Online shopping is more efficient than shopping in a store.</value>
+  </data>
+  <data name="Text0_37" xml:space="preserve">
+    <value>Social networking is more efficient than going to clubs.</value>
+  </data>
+  <data name="Text0_38" xml:space="preserve">
+    <value>Cloud computing is more efficient than a private computer network.</value>
+  </data>
+  <data name="Text0_39" xml:space="preserve">
+    <value>As you can see in this picture, there are many important metrics of measuring innovation in any organization as well as one of them most important is the sales growth. For this, it would be interesting that any company would try to implement new idea or thought, even if develop one that already exists adding something different to improve it.</value>
+  </data>
+  <data name="Text0_40" xml:space="preserve">
+    <value>Source: PwCs Innovation Benchmark</value>
+  </data>
+  <data name="Text0_41" xml:space="preserve">
+    <value>Therefore, we already know what the specific and special needs of innovation projects management and evaluation are as well as how the IT tools could be the best option to support them.</value>
+  </data>
+  <data name="Text0_42" xml:space="preserve">
+    <value>Anyway, not all tools are perfect, not every tool is suitable, it will depend on the type of company (size, market, industry, capital or equity, mission, vision, and values) and how much it is willing to innovate in its launches. Therefore, selecting an optimal tool is not easy, and requires a certain amount of risk-taking on the part of the company as it may fail, may not be efficient and effective, and may not deliver all the possible advantages and benefits that could be obtained if it is the perfect tool. In addition, errors and failures may occur during the process, and the project may not be successfully implemented. The company would not only have to assume the losses generated by the cost of managing the entire project, but also the cost of implementing the IT tool contracted.</value>
+  </data>
+  <data name="Text0_43" xml:space="preserve">
+    <value>So, we ask ourselves, have there been failure innovative projects even with the use of these tools? If there have been, here are some:</value>
+  </data>
+  <data name="Text0_44" xml:space="preserve">
+    <value>The Nintendo Virtual Boy</value>
+  </data>
+  <data name="Text0_45" xml:space="preserve">
+    <value>Colgate Lasagne</value>
+  </data>
+  <data name="Text0_46" xml:space="preserve">
+    <value>The McDonald’s McDLT</value>
+  </data>
+  <data name="Text0_47" xml:space="preserve">
+    <value>Google Glass</value>
+  </data>
+  <data name="Text0_48" xml:space="preserve">
+    <value>Apple iTunes</value>
+  </data>
+  <data name="Text0_49" xml:space="preserve">
+    <value>In fact, not only famous companies can obtain these failures, because studies show that around 60% to 80% of company’s innovations fail and the main reason for it can be the following:</value>
+  </data>
+  <data name="Text0_50" xml:space="preserve">
+    <value>Wrong decisions</value>
+  </data>
+  <data name="Text0_51" xml:space="preserve">
+    <value>Low priority for innovation</value>
+  </data>
+  <data name="Text0_52" xml:space="preserve">
+    <value>Lack of market orientation</value>
+  </data>
+  <data name="Text0_53" xml:space="preserve">
+    <value>Slow structures</value>
+  </data>
+  <data name="Text0_54" xml:space="preserve">
+    <value>Therefore, it’s essential for companies to implement a good evaluation model and strategy for the management of the innovative project to determine its success. As we have already seen in class, there are different evaluation models (scorecard), which serve as support and help for the management of innovation.</value>
+  </data>
+  <data name="Text0_55" xml:space="preserve">
+    <value>Therefore, it is not only important to make use of the technological tools to correctly carry out each stage of the innovation process, but also the evaluation model will be vital, as it can allow restructuring, changes, and modifications to avoid as much as possible the failure of the project to be launched. However, the risk or probability of failure will depend on whether it is a radical innovation or not. If it is a radical innovation, knowing that the risk is greater, but the probability of remaining in the market if it is carried out correctly will be high.</value>
+  </data>
+  <data name="Text0_56" xml:space="preserve">
+    <value>Perhaps it would be a good option if the company will try to use their IT tools to reduce and minimize these mistakes, but for do it, previously they should find adequate, appropriate, and correct tool for them. For example, the most popular or famous of them are the following:</value>
+  </data>
+  <data name="Text0_57" xml:space="preserve">
+    <value>Obviously, there some differences between them, and the company could choice/select one according to their conditions, structure, objectives. For example, if the company specially need to implement one of this IT tools because it would like to have more creative ideas easily, maybe it the best option would be using the last one explains in the table (Inno360) because it allows search for opportunities and ideas on its own web.</value>
+  </data>
+  <data name="Text0_58" xml:space="preserve">
+    <value>Many companies. Many markets. Competitiveness. Need to be different, to offer something new, not better than the rest, but new. Adapt or die.</value>
+  </data>
+  <data name="Text0_59" xml:space="preserve">
+    <value>Need for creative and innovative ideas to implement. Thousands of opportunities to experiment, analyse, develop, and exploit. The value of ideas is more important than ever. They can be turned into success if each stage of the innovation process is done correctly.</value>
+  </data>
+  <data name="Text0_60" xml:space="preserve">
+    <value>It is not an easy, quick, and free process. Uncertainty, risk and insecurity. It certainly requires commitment, willingness, effort, organisation and patience.</value>
+  </data>
+  <data name="Text0_61" xml:space="preserve">
+    <value>Digital and technological era. Codification, processing, recording, storage and access to information and data in the same place with a single click. Facilities to take advantage of. IT Tools to learn to use.</value>
+  </data>
+  <data name="Text0_62" xml:space="preserve">
+    <value>Innovation is possible, success is achievable. The tools exist. It is only a question of analysing, studying, and choosing the right one.</value>
+  </data>
+  <data name="Text0_63" xml:space="preserve">
+    <value>Now more than ever.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Innovative initiative evaluation</value>
+  </data>
+</root>

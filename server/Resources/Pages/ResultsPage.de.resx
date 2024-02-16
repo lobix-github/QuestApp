@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Benchmarking Report" xml:space="preserve">
+    <value>Benchmarking-Bericht</value>
+  </data>
+  <data name="Benchmarking Report Text1" xml:space="preserve">
+    <value>Digitalisierungslevel von Innovationsprozessen</value>
+  </data>
+  <data name="Benchmarking Report Text2" xml:space="preserve">
+    <value>Durchgeführt für:</value>
+  </data>
+  <data name="Benchmarking Report Text3" xml:space="preserve">
+    <value>Basierend auf:</value>
+  </data>
+  <data name="Digital Innovation Team" xml:space="preserve">
+    <value>Das Digital Innovation Team</value>
+  </data>
+  <data name="Effectiveness" xml:space="preserve">
+    <value>Erfolg und Kontrolle des Innovationsprozesses</value>
+  </data>
+  <data name="Effectiveness Text1" xml:space="preserve">
+    <value>Die folgende Analyse zeigt den Zusammenhang zwischen Innovationserfolg und -kontrolle und dem Grad der
+Digitalisierung des Innovationsprozesses. Sie gibt Aufschluss darüber, wie wichtig die Digitalisierung für die Effektivität der
+internen Entwicklungsaktivitäten ist und wie diese Bedeutung vom Kontext der spezifischen Geschäftstätigkeit abhängt.
+Die Grafiken zeigen den Innovationsprozess-Engagement-Index - IPE und den Innovationsprozess Digitaler
+Intensitätsindex - IPDI. Die verfügbaren Filter enthalten 8 Kriterien, die den Standort, die Größe und die Art des
+Unternehmens charakterisieren.&lt;br/&gt;Der Erfolg und die Kontrolle des Innovationsprozesses werden anhand der Abweichungen der Innovationsausgaben und
+der Auswirkungen der Innovationsaktivitäten von den gewünschten Werten gemessen. Der Wert -2 in dem Diagramm
+bedeutet ein viel schlechteres Ergebnis als erwartet, 0 ein Ergebnis nahe dem angenommenen, und der Wert 2 bedeutet
+ein viel besseres Ergebnis.</value>
+  </data>
+  <data name="Effectiveness Text2" xml:space="preserve">
+    <value>Wählen Sie die Schaltfläche &lt;b&gt;Bericht generieren&lt;/b&gt;, um einen vollständigen Bericht im PDF-Format zu erstellen.</value>
+  </data>
+  <data name="Effectiveness Text3" xml:space="preserve">
+    <value>Wir laden Sie dazu ein, das Benchmarking-Tool erneut zu nutzen. Da die Nutzerbasis weiterwächst, ändern sich auch die
+Vergleichsdaten. Nach dem Einloggen auf der Plattform können Sie die in der Umfrage gesammelten Daten erneut
+verwenden, um neue Vergleiche zu erstellen oder einen neuen Fragebogen auszufüllen, wenn sich die Situation des
+Unternehmens ändert. Die gesamte Umfragehistorie wird in einem individuellen Benutzerkonto gespeichert. Es lohnt sich,
+auf dem Laufenden zu bleiben und zu beobachten, wie sich die Situation des aktuellen und zukünftigen Wettbewerbs
+verändert.</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Zurückteilen</value>
+  </data>
+  <data name="Feedback Text1" xml:space="preserve">
+    <value>&lt;p&gt;Wir hoffen, dass Sie wertvolle Informationen über die Entwicklungsrichtung Ihres Unternehmens erhalten haben. Aber
+das ist nicht alles, was wir für Sie tun können. Wenn Sie an zusätzlichen Analysen im Bereich der Digitalisierung
+innovativer Aktivitäten interessiert sind, kontaktieren Sie uns bitte per E-Mail.&lt;/p&gt;&lt;p&gt;Da wir auch ständig an der Weiterentwicklung unserer Plattform arbeiten, würden wir gerne erfahren, wie Sie Ihre
+Benchmarking-Erfahrung bewerten und welche zusätzlichen Funktionalitäten für Sie nützlich wären. Klicken Sie auf diesen
+&lt;b&gt;&lt;a href=www.somelink.com/ target=\"_blank\"&gt;Link&lt;/a&gt;&lt;/b&gt;, um zur Bewertungsumfrage zu gelangen.&lt;/p&gt;</value>
+  </data>
+  <data name="FilterAnswers1" xml:space="preserve">
+    <value>Anteil der Ausgaben für Innovationen</value>
+  </data>
+  <data name="FilterAnswers2" xml:space="preserve">
+    <value>Anteil innovativer Produkte und
+Prozesse im Betrieb des Unternehmens</value>
+  </data>
+  <data name="FilterAnswers3" xml:space="preserve">
+    <value>Anteil erfolgreicher neuer Implementierungen im Betrieb des Unternehmens</value>
+  </data>
+  <data name="General Results" xml:space="preserve">
+    <value>Die allgemeinen Ergebnisse</value>
+  </data>
+  <data name="General Results D/E" xml:space="preserve">
+    <value>&lt;b&gt;Digitalisation/Engagement Ratio – D/E Ratio (Digitalisierungs-/ Engagement-Verhältnis)&lt;/b&gt;&lt;/br&gt;Das D/E Ratio misst den relativen Wert des Innovationsprozess-Intensitätsindex zum Innovationsprozess-
+Engagement-Index und gibt einen Hinweis auf die Einbindung digitaler Tools in innovationsmanagementbezogene
+Aktivitäten, die im Rahmen der im Unternehmen diesbezüglich generell eingesetzten Aktivitäten liegen. Der
+Maximalwert des Verhältnisses beträgt 100%, auch in den einzelnen Kategorien.</value>
+  </data>
+  <data name="General Results IPDC" xml:space="preserve">
+    <value>&lt;b&gt;Innovation Process Digital Coverage Index - IPDC (Innovationsprozess Digitaler Abdeckungsindex)&lt;/b&gt;&lt;/br&gt;Der IPDC zeigt, inwieweit die einzelnen Phasen des Innovationsprozesses durch digitale Tools unterstützt werden.
+Der Indexwert ermöglicht es, die digitale Abdeckung des Innovationsmanagements in verschiedenen Branchen zu
+vergleichen und zu verstehen, welche Aktivitäten potenziell digital unterstützt werden könnten. Der Höchstwert
+des Index beträgt 60 und in den einzelnen Kategorien 10.</value>
+  </data>
+  <data name="General Results IPDI" xml:space="preserve">
+    <value>&lt;b&gt;Innovation Process Digital Intensity Index – IPDI (Innovationsprozess Digitaler Intensitätsindex)&lt;/b&gt;&lt;/br&gt;Der IPDI misst den Grad der tatsächlichen Nutzung digitaler Tools in der Innovationsmanagementpraxis. Der Index
+eignet sich insbesondere gut für Unternehmen, die bereits Erfahrung mit der Nutzung digitaler Tools für die
+Generierung von Innovationsideen und deren Verwaltung oder Vermarktung haben und ihre Position mit anderen
+digitalen Innovatoren in ihrer Branche vergleichen möchten. Der Höchstwert des Index beträgt 60 und in den
+einzelnen Kategorien 10.</value>
+  </data>
+  <data name="General Results IPE" xml:space="preserve">
+    <value>&lt;b&gt;Innovation Process Engagement Index – IPE (Innovationsprozess-Engagement-Index)&lt;/b&gt;&lt;/br&gt;Mit dem IPE lässt sich die Komplexität der in einem Unternehmen angewandten
+Innovationsmanagementpraktiken vergleichen. Dieses einfache Maß stellt den Gesamtansatz für den
+Innovationsprozess in einem bestimmten Wirtschaftszweig dar und zeigt den Systematisierungsgrad in einem
+Unternehmen auf, was ein Indikator für die Digitalisierungsbereitschaft ist. Der Höchstwert des Index beträgt 60
+und in den einzelnen Kategorien 10.</value>
+  </data>
+  <data name="General Results Text1" xml:space="preserve">
+    <value>Die Tabelle zeigt das Ergebnis der Analyse, die auf der Grundlage der abgeschlossenen Benchmarking-Erhebung durchgeführt wurde. Die Analyse umfasst vier Indikatoren:</value>
+  </data>
+  <data name="General Results Text2" xml:space="preserve">
+    <value>Die Ergebnisse sollten im spezifischen Unternehmenskontext betrachtet werden, daher spielt es keine Rolle, ob der Wert
+hoch oder niedrig ist. Wichtig ist das Verständnis der relativen Position des Unternehmens im Vergleich zu anderen,
+insbesondere zu sektorspezifischen Wettbewerbern. In der Tabelle sind die Durchschnittswerte der nachfolgenden
+Indikatoren für alle Unternehmen und für Unternehmen, die den für ein analysiertes Unternehmen angegebenen Sektor
+repräsentieren, zusammengefasst. Für die einzelnen Prozesskategorien wurde ein Farbcode verwendet, der in der Tabelle
+deutlich erläutert wird. Der Farbcode zeigt an, in welcher Prozesskategorie das Ergebnis des Unternehmens höher oder
+niedriger als der Durchschnitt ist.</value>
+  </data>
+  <data name="Generate Report" xml:space="preserve">
+    <value>Bericht generieren</value>
+  </data>
+  <data name="Individual Results" xml:space="preserve">
+    <value>Die Ergebnisse in einem individualisierten Kriterienkontext</value>
+  </data>
+  <data name="Individual Results Text1" xml:space="preserve">
+    <value>Die individualisierten Ergebnisse werden im Zusammenhang mit den vom Nutzer angegebenen Vergleichskriterien
+dargestellt, indem die relevantesten Filter ausgewählt werden. Die Diagramme auf der linken Seite fassen das Ergebnis für
+alle in der Datenbank gesammelten Nutzerdaten zusammen. Die Diagramme auf der rechten Seite zeigen die Werte eines
+analysierten Unternehmens in dem vom Nutzer gewählten Kontext. Die Ergebnisse können mit dem Durchschnittswert verglichen werden, aber auch auf die Gruppe der digitalen Innovatoren
+und digitalen Nachzügler bezogen werden. Digitale Innovatoren stellen 20 % der Unternehmen mit den besten
+Ergebnissen in einer bestimmten Kategorie dar, während als digitale Nachzügler 20 % der Unternehmen mit den
+niedrigsten Ergebnissen gelten. Die Auswahl der Kriterien gilt immer für alle Diagramme. Die Anzahl der möglichen
+Vergleiche ist unbegrenzt.</value>
+  </data>
+  <data name="Individual Results Text2" xml:space="preserve">
+    <value>Die nachstehenden Diagramme zeigen den Innovationsprozess und die Digitalisierungsquoten in Abhängigkeit von den
+folgenden Auswahlkriterien: Unternehmensstandort, Unternehmensgröße, Branche, Länge der Tätigkeit am Markt und
+Höhe des Jahresumsatzes. Durch die Auswahl der entsprechenden Optionen ist es möglich, die aktuelle Position mit
+Unternehmen mit ähnlichen bzw. unterschiedlichen Charakteristiken zu vergleichen, die die zukünftige Entwicklung
+inspirieren könnten.</value>
+  </data>
+  <data name="Individual Results Text3" xml:space="preserve">
+    <value>Weitere Diagramme zeigen die digitalen Werte im Vergleich zur Intensität des Innovationsengagements. Bei den Filtern
+wurden die folgenden Kriterien berücksichtigt: Anteil der Ausgaben für Innovationen, Anteil innovativer Produkte und
+Prozesse im Betrieb des Unternehmens und Anteil erfolgreicher neuer Implementierungen im Betrieb des Unternehmens.</value>
+  </data>
+  <data name="loading..." xml:space="preserve">
+    <value>Laden...</value>
+  </data>
+  <data name="No Result" xml:space="preserve">
+    <value>Keine Umfragen</value>
+  </data>
+  <data name="Results Title" xml:space="preserve">
+    <value>Ihre Ergebnisse</value>
+  </data>
+  <data name="SurveyDropDownLabel" xml:space="preserve">
+    <value>Umfrage</value>
+  </data>
+  <data name="Surveys:" xml:space="preserve">
+    <value>Umfragen:</value>
+  </data>
+</root>

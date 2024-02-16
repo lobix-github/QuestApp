@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Author" xml:space="preserve">
+    <value>Marta Boniewska</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Text0_1" xml:space="preserve">
+    <value>These days creativity, ideation, and idea management begin to gain more and more value.
+Each day we must face many new challenges- it may be at the university, at school, at work, or even
+at home. In all these places, we meet with various problems or needs, that we must solve as fast as
+our legs could carry us. We are working multitasking and it’s always expected of us to be creative,
+innovative, and highly productive. We must cooperate with a big amount of people despite we are all
+so busy and scattered around the world. It all requires an adjustment and use of the latest
+opportunities offered to us by technological development.</value>
+  </data>
+  <data name="Text0_2" xml:space="preserve">
+    <value>And then…The IT tools come to our aid.</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>Unlimited options for working on the process</value>
+  </data>
+  <data name="Text1_1" xml:space="preserve">
+    <value>Due to IT tools, we’ve got an incredible possibility to work on cases in any part of the world,
+only with help of a computer. We’re creating international teams so that we meet new people and
+
+learn about their cultures. That gives us the possibility of exchanging experiences and knowledge,
+even between experts in the remotest corners of the world. Not only the location ceases to be an
+obstacle, but also time. We can work flexible hours. Working in Cloud enables us to develop our
+ideas any time we’ve got one. It helps a lot because we’ve got unlimited options. And this, combined
+with online knowledge resources, gives us amazing opportunities.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Expand the range of thinking through visualization</value>
+  </data>
+  <data name="Text2_1" xml:space="preserve">
+    <value>IT tools help us with creating and developing ideas as well. With their help, we can visualize
+at high levels of advancement and develop ideas by combining many tools at the same time. We’ve
+got so many options and each of them is different, special. We can use ready templates, graphics,
+videos, notes, sets of research notes, and many other graphic tools. We reach e.g. Miro or Canva and
+by working with them, we start to expand the range of ideas beyond the current range of thinking.
+This type of work gives us a new perspective on many known things. The use of IT tools allows us to
+bring our visions to the documents and see them in a more substantial form. The process of creating
+visualizations and working on their every detail makes us reflect deeper. We begin to question the
+correctness of many aspects, their reality, and their applicability. Then we start to look for new
+solutions, that will be maybe more suitable.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>Personal experiences</value>
+  </data>
+  <data name="Text3_1" xml:space="preserve">
+    <value>As I said we all have amazing opportunities to make of, but it depends on us if we will take
+advantage of them. I’m happy that I decided to ride this new experience out. A short time ago, I had
+got amazing opportunity to take part in a very interesting project. Our task was to find the best, most
+innovative, and creative solution to the presented problem. The main thing was that during this
+whole process we were encouraged to use many various IT tools, which we didn’t know so far. I had
+a lot of doubts because at that moment I wasn’t into this ground. I hadn’t got sufficient knowledge
+and I knew that I would have to learn everything from scratch. That scared me a little, but I didn&amp;#39;t
+want to give up and this is how my journey with founding and exploring the way of using IT tools in
+the analysis of innovative projects began.</value>
+  </data>
+  <data name="Text3_2" xml:space="preserve">
+    <value>I did not regret my decision. I’ve worked with my team on our project with a big investment.
+It involved us a lot. I started to feel a thirst for knowledge and look for ideas in my free time on my
+account. The discussion about the discoveries of each of us was thrilling. I don’t know how to
+describe our brainstorms. I was really impressed that we can influence ourselves and generate so
+many various examples of solutions.</value>
+  </data>
+  <data name="Text3_3" xml:space="preserve">
+    <value>It wasn’t always easy. First, we must learn how to use tools, which was at our command. You
+know when we deal with something new it isn’t always all downhill. We made a lot of mistakes,
+spoiled our project, and must rebuild it, but I think that this way of work teaches us the most. Every
+mistake helps us to understand better the use of the particular tool. The inbuilt guides turned out to
+
+be extremely helpful. We read the tips and learned new things in an extremely accessible way. They
+were adapted to even the most novice users. We developed our skills and knowledge using the
+method of small steps.</value>
+  </data>
+  <data name="Text3_4" xml:space="preserve">
+    <value>Even though the use of IT tools requires us to have access to the Internet and computer
+equipment or mobile, which may be a limit or a problem in some situations, I think it’s well worth the
+effort. In our team, we were from many different towns, to which everyone returned during part of
+the week, and in that, we were not attached to the place. We used online calls, Miro, and Canvas
+tools, so we were working in Cloud. That helps a lot. Any time we had an idea we were able to
+discuss it with other members, and maybe inspire them. Sometimes our hardware and software were
+stuck, and we must show our patience. Perhaps this would not be the case if we had used traditional
+methods, but I suspect that in such a case we would spend much more time on corrections,
+preparation for work, and collecting the necessary tools. IT tools offer us everything in one place.</value>
+  </data>
+  <data name="Text3_5" xml:space="preserve">
+    <value>I must also mention of one another weak point. The most important disadvantage was to
+keep the team focused on the work. It takes a lot of effort to organize work well, during which
+everyone is involved to a similar degree and performs the tasks entrusted to him. No face-to-face
+contact handicapped management of it, but it may also occur in other cases. The use of IT tools can
+also take place in direct contact. It is not closely related to this method of work. However, the work
+using IT tools lets us in such situations to work also in adapted to us time and structure a plan of
+work with due dates, tasks lists, and guidelines.</value>
+  </data>
+  <data name="Text3_6" xml:space="preserve">
+    <value>So, what would you say if I told you that not using IT tools will limit us and closes our perspectives?</value>
+  </data>
+  <data name="Text3_7" xml:space="preserve">
+    <value>What do you think about it?</value>
+  </data>
+  <data name="Text3_8" xml:space="preserve">
+    <value>Please let me know, I can not wait to start a conversation about that.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>The support of IT tools for the needs of creativity, ideation, and idea management</value>
+  </data>
+</root>

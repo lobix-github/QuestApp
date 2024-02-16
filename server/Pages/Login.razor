@@ -1,0 +1,52 @@
+﻿@page "/login"
+
+@inherits LoginBase
+
+@using QuestApp.DTO
+
+<AuthorizeView>
+    <Authorized>
+        <AlertComponent AlertType="danger"><span class="oi oi-warning mr-2" /><strong>@L["Already logged in!"]</strong></AlertComponent>
+    </Authorized>
+    <NotAuthorized>
+        <RadzenContent Container="main">
+            <ChildContent>
+                <div class="col-10 offset-1">
+                    <RadzenHeading Size="H1" Text="@L["Login page"]" />
+                    <div class="row align-items-center">
+                        <div class="col-4">
+                            <RadzenTemplateForm TItem="UserDTO" Data="@user" Submit="@HandleValidSubmit">
+                                <ChildContent Context="Another_Name">
+                                    <div>
+                                        <RadzenLabel Text="@L["Email"]" />
+                                        <RadzenTextBox id="inputEmail" style="display: block; width: 100%" @bind-Value="@(user.Email)" />
+                                        <RadzenLabel Text="@L["Password"]" />
+                                        <RadzenPassword style="display: block; width: 100%" @bind-Value="@(user.Password)" />
+                                    </div>
+                                    <div class="col-6 offset-6 forgot-pwd">
+                                        @L["Forgot password?"]
+                                        <span class="forgot-pwd-text">@L["Forgot password text"]</span>
+                                    </div>      
+                                    <div>
+                                        <span hidden="@DontShowError">
+                                            <AlertComponent AlertType="danger"><span class="oi oi-warning mr-2" /><strong>@L["Error"]</strong><span class="mr-4" />@ValidationErrorMsg</AlertComponent>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="login" Text="@L["Login"]" Disabled="@Progressing"/>
+                                        <RadzenButton ButtonStyle="ButtonStyle.Light" Text="@L["Cancel"]" Click="@(() => NavigationManager.NavigateTo("/"))" />
+                                    </div>
+                                </ChildContent>
+                            </RadzenTemplateForm>
+                        </div>
+                        <div class="col-8">
+                            <div class="row justify-content-center">
+                                <img src="/images/pic2.jpg" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ChildContent>
+        </RadzenContent>
+    </NotAuthorized>
+</AuthorizeView>

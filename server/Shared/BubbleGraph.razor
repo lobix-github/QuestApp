@@ -1,0 +1,18 @@
+﻿@inherits ComponentBase
+
+@using Syncfusion.Blazor.Charts
+
+@inject IStringLocalizer<QuestApp.Pages.SharedRes> SharedResL
+
+<SfChart Title=@Title>
+    <ChartPrimaryXAxis Interval="1" Minimum="-2" Maximum="2"></ChartPrimaryXAxis>
+    <ChartPrimaryYAxis Interval="10" Minimum="0" Maximum="60" />
+    <ChartSeriesCollection>
+        <ChartSeries DataSource="@ChartPoints" XName="X" YName="Y" PointColorMapping="Color" Size="Size" Type="ChartSeriesType.Bubble" />
+    </ChartSeriesCollection>
+</SfChart>
+
+@code {
+    [Parameter] public string Title { get; set; }
+    [Parameter] public IEnumerable<object> ChartPoints { get; set; }
+}

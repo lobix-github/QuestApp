@@ -1,0 +1,334 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Text0_1" xml:space="preserve">
+    <value>When we think or hear about a certain company, the first couple of things that come to our
+minds is the logo of such company, its products and/or services, and sometimes their target
+market or where is the closest outlet.</value>
+  </data>
+  <data name="Text0_2" xml:space="preserve">
+    <value>However, if we’re working within the company in lower ranks, we also think about our
+colleagues, boss, and why the coffee machine is still not working.</value>
+  </data>
+  <data name="Text0_3" xml:space="preserve">
+    <value>The boss and higher managers reflect about those things as well, but additionally, they
+consider how to improve the situation of the company, whether it is sales, production or
+the work environment.</value>
+  </data>
+  <data name="Text0_4" xml:space="preserve">
+    <value>For that, a company needs to come up with an idea.</value>
+  </data>
+  <data name="Text0_5" xml:space="preserve">
+    <value>At first glance, coming up with an idea does not seem so difficult.
+While some people would agree with that, we still need to keep in
+mind a couple of factors.</value>
+  </data>
+  <data name="Text0_6" xml:space="preserve">
+    <value>A company that has been on the market for good couple years
+may struggle with coming up with a new and effective idea.</value>
+  </data>
+  <data name="Text0_7" xml:space="preserve">
+    <value>There are many ways and tools that help us with generating and managing ideas, depending
+on the goals and size of such ideas. One of the ways which I’ll be talking about is &lt;b&gt;crowdsourcing&lt;/b&gt;.
+</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>For those of you who don’t know what crowdsourcing is…</value>
+  </data>
+  <data name="Text1_1" xml:space="preserve">
+    <value>As the name says by itself, &lt;b&gt;Crowdsourcing&lt;/b&gt; is a method that is based on &lt;u&gt;gathering&lt;/u&gt;&lt;b&gt; (sourcing)&lt;/b&gt; knowledge or other resources from  &lt;u&gt;a group of people &lt;/u&gt; &lt;b&gt;(the crowd)&lt;/b&gt;.</value>
+  </data>
+  <data name="Text1_2" xml:space="preserve">
+    <value>It is a quite convenient way of collecting goods or ideas, because the crowd doesn’t have to be consisted of people solely working within our company. Crowdsourcing allows people from outside of the company to participate.</value>
+  </data>
+  <data name="Text1_3" xml:space="preserve">
+    <value>There are different types of crowdsourcing, one of the main ones are:</value>
+  </data>
+  <data name="Text1_4" xml:space="preserve">
+    <value>Crowdfunding</value>
+  </data>
+  <data name="Text1_5" xml:space="preserve">
+    <value>Crowdvoting</value>
+  </data>
+  <data name="Text1_6" xml:space="preserve">
+    <value>Crowdcontest</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>Let’s talk about the advantages of using Crowdsourcing</value>
+  </data>
+  <data name="Text2_1" xml:space="preserve">
+    <value>The crowd</value>
+  </data>
+  <data name="Text2_1_1" xml:space="preserve">
+    <value>As mentioned before, the crowd is composed of many people. Whether they’re inside or outside of our company, they provide us with a wide range of knowledge and ideas, especially those people from outside, because it’s them who can pinpoint the flaws or lack of some things in our business, that stops us from improving.</value>
+  </data>
+  <data name="Text2_1_2" xml:space="preserve">
+    <value>Furthermore, every person has a different attitude, level of knowledge, etc.</value>
+  </data>
+  <data name="Text2_1_3" xml:space="preserve">
+    <value>Of course, it does not mean that 1 person = 1 unique idea. Some individuals may think of the same thing, but overall, crowdsourcing can fill us with a decent amount of ideas.</value>
+  </data>
+  <data name="Text2_2" xml:space="preserve">
+    <value>The speed and cost</value>
+  </data>
+  <data name="Text2_2_1" xml:space="preserve">
+    <value>Surely, crowdsourcing takes time, however in comparison to other methods, it is still one of the fastest methods.</value>
+  </data>
+  <data name="Text2_2_2" xml:space="preserve">
+    <value>It not only saves time but also money, because the company doesn’t need to create and fund a specialist project or team. The only thing that needs to be done is some type of internet service: a website or a mobile app, which would enable the participants to send their ideas.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>As for the disadvantages of Crowdsourcing</value>
+  </data>
+  <data name="Text3_1" xml:space="preserve">
+    <value>Not precise</value>
+  </data>
+  <data name="Text3_1_1" xml:space="preserve">
+    <value>Even though the amount of ideas seems promising, we need to remember that some people in the crowd may not know much about our company or even about its existence.
+It is both a good and a bad thing, because while we might get a fresh idea and get to know the view and opinion from a person who’s not familiar with our company, we still have to take into consideration that the idea might not have the things we’re looking for.</value>
+  </data>
+  <data name="Text3_2" xml:space="preserve">
+    <value>Not prepared</value>
+  </data>
+  <data name="Text3_2_1" xml:space="preserve">
+    <value>A further drawback also refers to the amount of ideas.</value>
+  </data>
+  <data name="Text3_2_2" xml:space="preserve">
+    <value>While our company receives ideas in a fast pace, we need to be prepared to evaluate them. The amount depends on the &lt;b&gt;size of the company&lt;/b&gt; and/or &lt;b&gt;the crowd&lt;/b&gt;, the bigger one of those is, the bigger the amount (in most cases).</value>
+  </data>
+  <data name="Text3_2_3" xml:space="preserve">
+    <value>If our company does not have a good team responsible for evaluation of ideas, the speed advantage of crowdsourcing can be backfired due to the slow evaluation processes in the company.</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>One of the platforms that uses crowdsourcing is “InnoCentive”</value>
+  </data>
+  <data name="Text4_1" xml:space="preserve">
+    <value>&lt;b&gt;InnoCentive&lt;/b&gt; has helped many businesses, governments and charities since 2001.
+In 2020, it was acquired by &lt;b&gt;Wazoku&lt;/b&gt;, another innovative business founded in 2011.</value>
+  </data>
+  <data name="Text4_2" xml:space="preserve">
+    <value>Both organisations believe that innovation is a very important factor in any business, so they help those businesses in delivering innovation and building a culture of innovation.</value>
+  </data>
+  <data name="Text4_3" xml:space="preserve">
+    <value>InnoCentive provides us with a very clear website.&lt;br/&gt;There are:</value>
+  </data>
+  <data name="Text4_4" xml:space="preserve">
+    <value>&lt;b&gt;“Challenges”&lt;/b&gt; – current problems of various companies</value>
+  </data>
+  <data name="Text4_5" xml:space="preserve">
+    <value>&lt;b&gt;“Seekers”&lt;/b&gt; or &lt;b&gt;“Pavilions”&lt;/b&gt; - companies which seek for a solution to their problems</value>
+  </data>
+  <data name="Text4_6" xml:space="preserve">
+    <value>&lt;b&gt;“Solvers”&lt;/b&gt; – individuals who can send their ideas to the problems</value>
+  </data>
+  <data name="Text4_7" xml:space="preserve">
+    <value>In InnoCentive there are companies from many sectors: from &lt;b&gt;‘Food’&lt;/b&gt; to &lt;b&gt;‘Technology’&lt;/b&gt;.&lt;br/&gt;
+In “Pavilions” section, we can browse through the companies that use InnoCentive, such like &lt;b&gt;“NASA”&lt;/b&gt; or &lt;b&gt;“U.S. Air Force”&lt;/b&gt;.</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>How does it work?</value>
+  </data>
+  <data name="Text5_1" xml:space="preserve">
+    <value>If we want to search for a problem that a company struggles with, we simply go to &lt;b&gt;“Challenges”&lt;/b&gt;.</value>
+  </data>
+  <data name="Text5_10" xml:space="preserve">
+    <value>Once submitted, the only thing that is left is to wait for the company to evaluate all received ideas and the announcement of the winner.</value>
+  </data>
+  <data name="Text5_2" xml:space="preserve">
+    <value>From there, we can:</value>
+  </data>
+  <data name="Text5_3" xml:space="preserve">
+    <value>Check the latest challenges</value>
+  </data>
+  <data name="Text5_4" xml:space="preserve">
+    <value>Go to already mentioned &lt;b&gt;“Pavilions”&lt;/b&gt; where we can look for challenges from a particular company we’re interested in</value>
+  </data>
+  <data name="Text5_5" xml:space="preserve">
+    <value>Browse through all available challenges</value>
+  </data>
+  <data name="Text5_6" xml:space="preserve">
+    <value>Each challenge can be of a different type, such like:&lt;br/&gt;
+&lt;b&gt;‘ideation’&lt;/b&gt; where it is a simple idea or &lt;b&gt;‘theoretical’&lt;/b&gt; where the idea is not yet a proof of concept, so the Solver needs to give a full description of the idea to become an actual product or service. We can also transfer &lt;b&gt;the intellectual property and rights of our already existing patent.&lt;/b&gt;</value>
+  </data>
+  <data name="Text5_7" xml:space="preserve">
+    <value>What is worth mentioning is that each challenge has an &lt;b&gt;award&lt;/b&gt; to win: a money prize (the most common) or collaboration with a company posting the challenge.</value>
+  </data>
+  <data name="Text5_8" xml:space="preserve">
+    <value>This definitely encourages people to dive into innovative thinking and trying to come up with ideas and possible solutions to the challenges.</value>
+  </data>
+  <data name="Text5_9" xml:space="preserve">
+    <value>Usually, the money prize is for the podium – the first 3 winners. The company decides what amount each place gets.&lt;br/&gt;
+However, every challenge has a &lt;b&gt;deadline&lt;/b&gt;, which spices things up, because it raises our adrenaline a bit, reason being the pressure of time. Of course, there’s enough time, so that everyone actively interested has enough time to think of an idea, work on it, and submit it.</value>
+  </data>
+  <data name="Text6" xml:space="preserve">
+    <value>Another example of a platform is “Lean Action Plan”</value>
+  </data>
+  <data name="Text6_1" xml:space="preserve">
+    <value>While it is not entirely focused on crowdsourcing, I still wanted to show the similarity between those 2 examples.</value>
+  </data>
+  <data name="Text6_10" xml:space="preserve">
+    <value>Moreover, the workshops are focused on production processes, so even if an employee comes up with an idea to improve other sector of the company, the coordinator of the workshop wouldn’t really accept the idea, since it’s not in its field of activity.</value>
+  </data>
+  <data name="Text6_2" xml:space="preserve">
+    <value>&lt;b&gt;Lean Action Plan&lt;/b&gt; offers a wide range of services of diagnosis, consultancy, projects and workshops regarding business processes.</value>
+  </data>
+  <data name="Text6_3" xml:space="preserve">
+    <value>I’ll be focusing on one of the workshops called &lt;b&gt;“Kaizen”&lt;/b&gt;.</value>
+  </data>
+  <data name="Text6_4" xml:space="preserve">
+    <value>Kaizen focuses on constant improvement and explains how even small ideas can bring big effects with time. The workshop teaches the employees what is the &lt;b&gt;value&lt;/b&gt; in production process and how to detect &lt;b&gt;obstacles&lt;/b&gt; within the process.</value>
+  </data>
+  <data name="Text6_5" xml:space="preserve">
+    <value>My brother works in a company where the Kaizen is implemented. After the workshops, the employees are encouraged to think of ideas that could &lt;b&gt;improve the production process&lt;/b&gt; within their company.</value>
+  </data>
+  <data name="Text6_6" xml:space="preserve">
+    <value>As mentioned before, &lt;u&gt;it’s not a typical crowdsourcing&lt;/u&gt;. The workshops give knowledge and teach methods, but still have some elements of crowdsourcing.</value>
+  </data>
+  <data name="Text6_7" xml:space="preserve">
+    <value>Similar to InnoCentive, the best ideas are awarded.&lt;br/&gt;
+Employees can submit their ideas on the production improvement, as long as they think it might be beneficial for the efficiency of production.</value>
+  </data>
+  <data name="Text6_8" xml:space="preserve">
+    <value>In case of the company my brother’s working in, around every quarter, the gathered ideas are being evaluated by Kaizen. The podium (first 3 places) wins the prize. The prizes are funded by the company, and these are products and services worth a particular amount of money.&lt;br/&gt;
+For example, the prizes are worth: $500, $400, $300 for the 1st, 2nd, and 3rd place respectfully. The winners get to choose the product or service from the prize pool.</value>
+  </data>
+  <data name="Text6_9" xml:space="preserve">
+    <value>&lt;b&gt;&lt;u&gt;What differentiates the workshop from crowdsourcing&lt;/u&gt;&lt;/b&gt; is that the employees don’t think for a solution to a sudden problem a company is facing, but rather have free will.
+They can think of anything that could help the production process, anytime.</value>
+  </data>
+  <data name="Text7" xml:space="preserve">
+    <value>To summarize</value>
+  </data>
+  <data name="Text7_1" xml:space="preserve">
+    <value>&lt;b&gt;Crowdsourcing&lt;/b&gt; is a method for &lt;b&gt;gathering ideas&lt;/b&gt;.&lt;br/&gt;
+It can &lt;b&gt;quickly&lt;/b&gt; provide us a &lt;b&gt;big&lt;/b&gt; wave of ideas that come from a group people within and outside of our company.</value>
+  </data>
+  <data name="Text7_2" xml:space="preserve">
+    <value>While some ideas might not be good and it takes some time to evaluate all of the ideas, the advantages definitely &lt;b&gt;reward&lt;/b&gt; us with a &lt;b&gt;solution&lt;/b&gt; to our problem.</value>
+  </data>
+  <data name="Text7_3" xml:space="preserve">
+    <value>When it comes to platforms like InnoCentive, people have a &lt;b&gt;chance to win&lt;/b&gt; some money or collaboration with a company posting its problem.</value>
+  </data>
+  <data name="Text7_4" xml:space="preserve">
+    <value>Crowdsourcing gathers all people who think innovatively and depicts how &lt;b&gt;big and important innovation&lt;/b&gt; is in businesses. It also shows that every person has a &lt;b&gt;great potential&lt;/b&gt; and how crucial it is to &lt;b&gt;listen&lt;/b&gt; to the voices of people within and outside of our company.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>The power of employees and people</value>
+  </data>
+</root>

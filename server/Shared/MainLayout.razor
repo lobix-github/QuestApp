@@ -1,0 +1,68 @@
+﻿@inherits QuestApp.Layouts.MainLayoutComponent
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+
+@using Radzen.Blazor
+
+<RadzenDialog />
+<RadzenNotification />
+
+<RadzenHeader>
+    <ChildContent>
+        <div class="row align-items-center hideWhenPrint" style="height: 100%; background-color: #E9F3F7">
+            @*<div class="col-7 d-flex align-items-center justify-content-center">
+                <span style="font-size: 28px; color: #a8367e; font-weight: bold">@L["App Title"]</span>
+            </div>*@
+            <div class="col-4 offset-7 text-right justify-content-end d-flex align-items-center">
+                <RadzenLabel class="pr-3" Text="@CS["Language"]" /><ChooseLanguage />
+                <AuthorizeView>
+                    <Authorized>
+                        <RadzenLabel class="pr-3" Text="@WelcomeText" />
+                        <RadzenLink class="pr-3" style="color: black" Text="@L["Logout"]" @onclick="LogOut" />
+                    </Authorized>                            
+                    <NotAuthorized>                          
+                        <RadzenLink class="pr-3" style="color: black" Text="@L["Login"]" Path="/login" />
+                        <RadzenLink class="pr-3" style="color: black" Text="@L["Register"]" Path="/register" />
+                    </NotAuthorized>
+                </AuthorizeView>
+            </div>
+        </div>
+    </ChildContent>
+</RadzenHeader>
+<RadzenBody @ref="body0" Style="margin-bottom: 0">
+    <ChildContent>
+        <RadzenContentContainer Name="main">
+            <div style="margin-bottom: 40px">
+                @Body
+            </div>
+            <div class="hideWhenPrint">
+                <Footer />
+            </div>
+        </RadzenContentContainer>
+    </ChildContent>
+</RadzenBody>
+<RadzenSidebar @ref="sidebar0" Style="bottom: 0; top: 60px">
+    <ChildContent>
+        <RadzenPanelMenu style="height: 100%">
+            <ChildContent>
+                <div>
+                    <img id="logo" src="/images/logo.png" />
+                </div>
+                <div class="hideWhenPrint">
+                    <RadzenPanelMenuItem Text="@L["Main Page"]" Path="/" Icon="home" />
+                    <RadzenPanelMenuItem Text="@L["General Results Page"]" Path="/general" Icon="leaderboard" />
+                    <RadzenPanelMenuItem Text="@L["Partners Page"]" Path="/partners" Icon="account_balance" />
+                    <AuthorizeView>
+                        <RadzenPanelMenuItem Text="@L["Survey Page"]" Path="/survey" Icon="add_chart" />
+                        <RadzenPanelMenuItem Text="@L["Results Page"]" Path="/results" Icon="score" />
+                        <RadzenPanelMenuItem Text="@L["Profile Page"]" Path="/edit" Icon="create" />
+                    </AuthorizeView>
+                    <AuthorizeView Roles="@($"{DB.Role.translate}")">
+                        <RadzenPanelMenuItem Text="@L["Translate Page"]" Path="/translate" Icon="translate" />
+                    </AuthorizeView>
+                </div>
+            </ChildContent>
+        </RadzenPanelMenu>
+    </ChildContent>
+</RadzenSidebar>
+

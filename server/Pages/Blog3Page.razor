@@ -1,0 +1,254 @@
+﻿@page "/blog3"
+
+@inject IStringLocalizer<Blog3Page> L
+
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="col-10 offset-1">
+            <div class="row blog-position">
+                <div class="col-8">
+                    <p>@L["Author"]</p>
+                    <RadzenHeading Size="H1" Text="@L["Title"]" />
+
+                    <p>@L["Text0_01"]</p>
+                    <ul style="list-style-type: disc">
+                        <li>@L["Text0_02"]</li>
+                        <li>@L["Text0_03"]</li>
+                        <li>@L["Text0_04"]</li>
+                        <li>@L["Text0_05"]</li>
+                        <li>@L["Text0_06"]</li>
+                    </ul>
+                    <p>@L["Text0_07"]</p>
+                    <p>@L["Text0_08"]</p>
+                    <p>@L["Text0_09"]</p>
+                    <ul style="list-style-type: disc">
+                        <li>@L["Text0_10"]</li>
+                        <li>@L["Text0_11"]</li>
+                        <li>@L["Text0_12"]</li>
+                        <li>@L["Text0_13"]</li>
+                    </ul>
+                    <p>@L["Text0_14"]</p>
+                    <ul style="list-style-type: disc">
+                        <li>@L["Text0_15"]</li>
+                        <li>@L["Text0_16"]</li>
+                        <li>@L["Text0_17"]</li>
+                        <li>@L["Text0_18"]</li>
+                        <li>@L["Text0_19"]</li>
+                        <li>@L["Text0_20"]</li>
+                        <li>@L["Text0_21"]</li>
+                    </ul>
+                    <p>@L["Text0_22"]</p>
+                    <p>@L["Text0_23"]</p>
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog3_1.jpg" style="width: 100%">
+                        <span style="font-style: italic">
+                            @L["Source"]
+                            <a target="_blank" href="https://financesonline.com/digital-transformation-statistics">https://financesonline.com/digital-transformation-statistics</a>
+                        </span>
+                    </div>
+                    <p>@L["Text0_24"]</p>
+                    <p>@L["Text0_25"]</p>
+                    <p>@L["Text0_26"]</p>
+                    <ul style="list-style-type: disc">
+                        <li>@L["Text0_27"]</li>
+                        <li>@L["Text0_28"]</li>
+                        <li>@L["Text0_29"]</li>
+                    </ul>
+                    <p>@L["Text0_30"]</p>
+                    <ul style="list-style-type: disc">
+                        <li>@L["Text0_31"]</li>
+                        <li>@L["Text0_32"]</li>
+                    </ul>
+                    <p>@L["Text0_33"]<span style="font-style: italic">@L["Text0_34"]</span></p>
+                    <p><table>
+                        <tr>
+                            <th>@L["Table1_header_1"]</th>
+                            <th>@L["Table1_header_2"]</th>
+                            <th>@L["Table1_header_3"]</th>
+                        </tr>
+                        <tr>
+                            <td>@L["Table1_row1_col1"]</td>
+                            <td>@L["Table1_row1_col2"]</td>
+                            <td>@L["Table1_row1_col3"]</td>
+                        </tr>
+                        <tr>
+                            <td>@L["Table1_row2_col1"]</td>
+                            <td>@L["Table1_row2_col2"]</td>
+                            <td>@L["Table1_row2_col3"]</td>
+                        </tr>
+                        <tr>
+                            <td>@L["Table1_row3_col1"]</td>
+                            <td>@L["Table1_row3_col2"]</td>
+                            <td>@L["Table1_row3_col3"]</td>
+                        </tr>
+                        <tr>
+                            <td>@L["Table1_row4_col1"]</td>
+                            <td>@L["Table1_row4_col2"]</td>
+                            <td>@L["Table1_row4_col3"]</td>
+                        </tr>
+                        <tr>
+                            <td>@L["Table1_row5_col1"]</td>
+                            <td>@L["Table1_row5_col2"]</td>
+                            <td>@L["Table1_row5_col3"]</td>
+                        </tr>
+                    </table></p>
+                    <p>@L["Text0_35"]</p>
+                    <ul style="list-style-type: disc">
+                        <li>@L["Text0_36"]</li>
+                        <li>@L["Text0_37"]</li>
+                        <li>@L["Text0_38"]</li>
+                    </ul>
+                    <p>@L["Text0_39"]</p>
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog3_2.jpg" style="width: 100%">
+                        <p style="font-style: italic">@L["Text0_40"]</p>
+                    </div>
+                    <p>@L["Text0_41"]</p>
+                    <p>@L["Text0_42"]</p>
+                    <p>@L["Text0_43"]</p>
+                    <ul style="list-style-type: disc">
+                        <li>@L["Text0_44"]</li>
+                        <li>@L["Text0_45"]</li>
+                        <li>@L["Text0_46"]</li>
+                        <li>@L["Text0_47"]</li>
+                        <li>@L["Text0_48"]</li>
+                    </ul>
+                    <p>@L["Text0_49"]</p>
+                    <ol style="list-style-type: decimal">
+                        <li>@L["Text0_50"]</li>
+                        <li>@L["Text0_51"]</li>
+                        <li>@L["Text0_52"]</li>
+                        <li>@L["Text0_53"]</li>
+                    </ol>
+                    <p>@L["Text0_54"]</p>
+                    <p>@L["Text0_55"]</p>
+                    <p>@L["Text0_56"]</p>
+                    <p><table>
+                        <tr>
+                            <th>@L["Table2_header_1"]</th>
+                            <th>@L["Table2_header_2"]</th>
+                            <th>@L["Table2_header_3"]</th>
+                            <th>@L["Table2_header_4"]</th>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">@L["Table2_row1_col1"]</td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row1_col2_1"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row1_col3_1"]</li>
+                                    <li>@L["Table2_row1_col3_2"]</li>
+                                    <li>@L["Table2_row1_col3_3"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row1_col4_1"]</li>
+                                    <li>@L["Table2_row1_col4_2"]</li>
+                                    <li>@L["Table2_row1_col4_3"]</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">@L["Table2_row2_col1"]</td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row2_col2_1"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row2_col3_1"]</li>
+                                    <li>@L["Table2_row2_col3_2"]</li>
+                                    <li>@L["Table2_row2_col3_3"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row2_col4_1"]</li>
+                                    <li>@L["Table2_row2_col4_2"]</li>
+                                    <li>@L["Table2_row2_col4_3"]</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">@L["Table2_row3_col1"]</td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row3_col2_1"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row3_col3_1"]</li>
+                                    <li>@L["Table2_row3_col3_2"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row3_col4_1"]</li>
+                                    <li>@L["Table2_row3_col4_2"]</li>
+                                    <li>@L["Table2_row3_col4_3"]</li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: bold">@L["Table2_row4_col1"]</td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row4_col2_1"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row4_col3_1"]</li>
+                                    <li>@L["Table2_row4_col3_2"]</li>
+                                    <li>@L["Table2_row4_col3_3"]</li>
+                                </ul>
+                            </td>
+                            <td>
+                                <ul style="list-style-type: square">
+                                    <li>@L["Table2_row4_col4_1"]</li>
+                                    <li>@L["Table2_row4_col4_2"]</li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </table></p>
+                    <p>@L["Text0_57"]</p>
+                    <p>@L["Text0_58"]</p>
+                    <p>@L["Text0_59"]</p>
+                    <p>@L["Text0_60"]</p>
+                    <p>@L["Text0_61"]</p>
+                    <p>@L["Text0_62"]</p>
+                    <p>@L["Text0_63"]</p>
+                </div>
+
+                <div class="col-4">
+                    <div class="d-flex flex-column">
+                        <News />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ChildContent>
+</RadzenContent>
+

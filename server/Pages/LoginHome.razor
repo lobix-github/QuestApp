@@ -1,0 +1,19 @@
+﻿@page "/login-home"
+
+@inject NavigationManager NavigationManager
+@inject IStringLocalizer<LoginHome> L
+
+@attribute [Authorize]
+
+@inject NavigationManager NavigationManager
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <RadzenHeading Size="H1" Text="@L["Welcome login"]" />
+        <div class="row">
+            <div class="col-12">
+                <RadzenHeading Size="H2" Text="Some welcome text here..." />
+            </div>
+        </div>
+    </ChildContent>
+</RadzenContent>

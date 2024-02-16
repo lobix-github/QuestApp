@@ -1,0 +1,56 @@
+﻿@page "/edit"
+
+@inherits EditProfileBase
+
+@using QuestApp.DTO
+
+<AuthorizeView>
+    <Authorized>
+        <RadzenContent Container="main">
+            <ChildContent>
+                <div class="col-10 offset-1">
+                    <RadzenHeading Size="H1" Text="@L["Edit Profile Page"]" />
+                    <p>@L["Text1"]</p>
+                    <div class="row align-items-center">
+                        <div class="col-4" style="margin-bottom: 1rem">
+                            <RadzenTemplateForm TItem="UserDTO" Data="@user" Submit="@HandleValidSubmit" InvalidSubmit="@HandleInvalidSubmit">
+                                <ChildContent Context="Another_Name">
+                                    <DataAnnotationsValidator />
+                                    <UserDataComponent user="@user" isEdit="@IsEdit" />
+
+                                    <div>
+                                        <span hidden="@DontShowError">
+                                            <AlertComponent AlertType="danger"><span class="oi oi-warning mr-2" /><strong>@L["Error"]</strong><span class="mr-4" />@ValidationErrorMsg</AlertComponent>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="@L["Update"]" />
+                                        <RadzenButton ButtonStyle="ButtonStyle.Light" Text="@L["Cancel"]" Click="@(() => NavigationManager.NavigateTo("/"))" />
+                                    </div>
+                                </ChildContent>
+                            </RadzenTemplateForm>
+                        </div>
+                        <div class="col-8">
+                            <div class="row justify-content-center">
+                                <img src="/images/pic2.jpg" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ChildContent>
+        </RadzenContent>
+    </Authorized>
+</AuthorizeView>
+
+@code {
+
+    protected async override Task ShowInlineDialog() => await DialogService.OpenAsync(@L["Profile Update Confirmation Header"], ds =>
+    @<div>
+         <p Style="margin-bottom: 1rem">@L["Profile Update Confirmation"]</p>
+        <div class="row">
+            <div class="col-12">
+                <RadzenButton Text="@L["OK"]" Click="() => ds.Close(true)" Style="margin-bottom: 10px; width: 150px" />
+            </div>
+        </div>
+    </div>);
+}

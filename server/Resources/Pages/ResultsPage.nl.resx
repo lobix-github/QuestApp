@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Benchmarking Report" xml:space="preserve">
+    <value>Benchmarkingrapport</value>
+  </data>
+  <data name="Benchmarking Report Text1" xml:space="preserve">
+    <value>Digitaliseringsniveau van innovatieprocessen</value>
+  </data>
+  <data name="Benchmarking Report Text2" xml:space="preserve">
+    <value>Gedaan voor:</value>
+  </data>
+  <data name="Benchmarking Report Text3" xml:space="preserve">
+    <value>gebaseerd op:</value>
+  </data>
+  <data name="Digital Innovation Team" xml:space="preserve">
+    <value>Het Digital Innovation Team</value>
+  </data>
+  <data name="Effectiveness" xml:space="preserve">
+    <value>Succes en controle van innovatieproces</value>
+  </data>
+  <data name="Effectiveness Text1" xml:space="preserve">
+    <value>De volgende analyse toont het verband aan tussen het succes en de controle van het innovatieproces , en de mate van digitalisering van het innovatieproces. Dit geeft inzicht in hoe belangrijk digitalisering is voor de doeltreffendheid van interne ontwikkelingsactiviteiten, en hoe het belang hiervan afhangt van de context van de specifieke bedrijfsactiviteit. De grafieken tonen de digitale intensiteitsindex voor het innovatieproces - IPE en de betrokkenheidsindex voor het innovatieproces- IPDI. De beschikbare filters bevatten acht criteria die de plaats, de grootte en het type van het bedrijf kenmerken. Het succes en de controle van het innovatieproces worden gemeten aan de hand van afwijkingen van de uitgaven voor
+innovatie en de effecten van innoverende activiteiten ten opzichte van de gewenste waarden. De waarde -2 op de grafiek betekent een resultaat dat veel slechter is dan verwacht, 0 een resultaat dat dicht bij het veronderstelde resultaat ligt, en de waarde 2 betekent een veel beter resultaat.</value>
+  </data>
+  <data name="Effectiveness Text2" xml:space="preserve">
+    <value>Selecteer de &lt;b&gt;Rapport genereren&lt;/b&gt;-knop om een permanent rapport in pdf-formaat te maken.</value>
+  </data>
+  <data name="Effectiveness Text3" xml:space="preserve">
+    <value>Wij nodigen u uit om de benchmarkingtool opnieuw te gebruiken. Aangezien het aantal gebruikers blijft groeien, veranderen de vergelijkende gegevens. Nadat u zich op het platform heeft aangemeld, kunt u de in de vragenlijst verzamelde gegevens opnieuw gebruiken om nieuwe vergelijkingen te maken of een nieuwe vragenlijst in te vullen als de situatie van uw bedrijf verandert. De hele vragenlijstgeschiedenis wordt opgeslagen in een individueel gebruikersaccount. Het is de moeite waard om op de hoogte te blijven en te observeren hoe de situatie van de huidige en de toekomstige concurrentie verandert.</value>
+  </data>
+  <data name="Feedback" xml:space="preserve">
+    <value>Shareback</value>
+  </data>
+  <data name="Feedback Text1" xml:space="preserve">
+    <value>&lt;p&gt;Wij hopen dat u waardevolle informatie heeft gekregen over de richting die uw bedrijf wil opgaan wat betreft ontwikkelingen. Wij kunnen echter meer dan dit.&lt;/br&gt;Als u geïnteresseerd bent in extra analyses op het gebied van de digitalisering van innoverende activiteiten, neem dan contact met ons op via e-mail.&lt;/p&gt;&lt;p&gt;Aangezien wij ook voortdurend werken aan de ontwikkeling van ons platform, zouden wij graag willen weten wat uw ervaring is met benchmarking en welke extra functionaliteiten voor u nuttig zouden zijn. Klik op deze &lt;b&gt;&lt;a href=www.somelink.com/ target=\"_blank\"&gt;link&lt;/a&gt;&lt;/b&gt; om naar de evaluatievragenlijst te gaan.&lt;/p&gt;</value>
+  </data>
+  <data name="FilterAnswers1" xml:space="preserve">
+    <value>Aandeel van de uitgaven voor innovatie</value>
+  </data>
+  <data name="FilterAnswers2" xml:space="preserve">
+    <value>Aandeel van innoverende producten en processen in de activiteiten van de onderneming</value>
+  </data>
+  <data name="FilterAnswers3" xml:space="preserve">
+    <value>Aandeel van succesvolle nieuwe implementaties in de activiteiten van de onderneming.</value>
+  </data>
+  <data name="General Results" xml:space="preserve">
+    <value>De algemene resultaten</value>
+  </data>
+  <data name="General Results D/E" xml:space="preserve">
+    <value>&lt;b&gt;Digitalisation/Engagement Ratio – D/E Ratio (Digitalisering/ betrokkenheidsratio)&lt;/b&gt;&lt;/br&gt;De D/E Ratio meet de relatieve waarde van de digitale intensiteitsindex van het innovatieproces ten opzichte van
+de betrokkenheidsindex van het innovatieproces en geeft een indicatie van de inzet van digitale tools bij
+activiteiten in verband met innovatiebeheer die in de onderneming op dit gebied worden geïmplementeerd. De maximumwaarde van de verhouding is 100%, ook in afzonderlijke categorieën.</value>
+  </data>
+  <data name="General Results IPDC" xml:space="preserve">
+    <value>&lt;b&gt;Innovation Process Digital Coverage Index - IPDC (index voor digitale dekking van het innovatieproces)&lt;/b&gt;&lt;/br&gt;IPDC toont aan in welke mate de specifieke fasen van het innovatieproces door digitale tools worden vergemakkelijkt. De indexwaarde maakt het mogelijk de digitale dekking van het innovatiebeheer in de verschillende sectoren te vergelijken en te begrijpen welke activiteiten mogelijk digitaal zouden kunnen worden ondersteund. De maximumwaarde van de index is 60 en in de afzonderlijke categorieën 10.</value>
+  </data>
+  <data name="General Results IPDI" xml:space="preserve">
+    <value>&lt;b&gt;Innovation Process Digital Intensity Index – IPDI (index voor digitale intensiteit van het innovatieproces)&lt;/b&gt;&lt;/br&gt;IPDI meet de mate waarin digitale tools daadwerkelijk worden gebruikt in de werkmethoden voor innovatiebeheer. De index voldoet aan de informatiebehoeften van ondernemingen die al ervaring hebben met het gebruik van digitale tools voor het genereren van innovatieve ideeën en het beheer of de commercialisatie daarvan, en die daarnaast hun positie willen vergelijken met die van andere digital innovators in hun sector. De maximumwaarde van de index is 60 en in de afzonderlijke categorieën 10.</value>
+  </data>
+  <data name="General Results IPE" xml:space="preserve">
+    <value>&lt;b&gt;Innovation Process Engagement Index – IPE (betrokkenheidsindex voor het innovatieproces)&lt;/b&gt;&lt;/br&gt;IPE maakt het mogelijk een vergelijking te maken van de complexiteit van de werkmethoden voor innovatiebeheer die in een onderneming zijn toegepast. Deze eenvoudige maatstaf geeft de algemene aanpak van het innovatieproces in een bepaalde sector weer en toont het niveau van de systematisering in een onderneming aan. Om die reden is het een indicator van de roep om digitalisering en de bereidheid daartoe. De maximumwaarde van de index is 60 en in de afzonderlijke categorieën 10.</value>
+  </data>
+  <data name="General Results Text1" xml:space="preserve">
+    <value>De tabel geeft het resultaat van de analyse op basis van de ingevulde benchmarking-vragenlijst. De analyse bevat vier indicatoren:</value>
+  </data>
+  <data name="General Results Text2" xml:space="preserve">
+    <value>De resultaten moeten in de specifieke bedrijfscontext worden gelezen, dus het maakt niet uit of de waarde hoog of laag is. Wat wel van belang is, is inzicht in de relatieve positie van de onderneming ten opzichte van andere bedrijven en vooral van sectorspecifieke concurrenten. De tabel geeft een overzicht van de gemiddelde waarden van de opeenvolgende indicatoren voor alle bedrijven en de ondernemingen die de sector vertegenwoordigen die zijn opgegeven voor een geanalyseerde onderneming. Voor de afzonderlijke procescategorieën is een kleurencode gebruikt, die onder de tabel duidelijk wordt uitgelegd. De kleurencode laat zien in welke procescategorie het resultaat van het bedrijf hoger of lager is dan het gemiddelde.</value>
+  </data>
+  <data name="Generate Report" xml:space="preserve">
+    <value>Rapport genereren</value>
+  </data>
+  <data name="Individual Results" xml:space="preserve">
+    <value>De resultaten in een context van geïndividualiseerde criteria</value>
+  </data>
+  <data name="Individual Results Text1" xml:space="preserve">
+    <value>De geïndividualiseerde resultaten worden weergegeven in de context van de vergelijkingscriteria die de gebruiker heeft aangegeven door de meest relevante filters te kiezen. De grafieken links geven het resultaat weer voor alle gebruikersgegevens die in de database zijn verzameld. De grafieken rechts geven de scores weer van een geanalyseerde onderneming in de door de gebruiker gekozen context. De resultaten kunnen worden vergeleken met de gemiddelde waarde, maar kunnen ook worden gerelateerd aan de groep Digital Innovators en Digital Lagers. Digital Innovators vormen 20% van de ondernemingen met de beste resultaten in een bepaalde categorie, terwijl ervan uit wordt gegaan dat Digital Lagers 20% van de ondernemingen met de laagste resultaten vormen De keuze van de criteria geldt altijd voor alle grafieken. Het aantal mogelijke vergelijkingen is onbeperkt.</value>
+  </data>
+  <data name="Individual Results Text2" xml:space="preserve">
+    <value>In de onderstaande grafieken worden het innovatieproces en de digitaliseringsverhoudingen voorgesteld in verhouding tot de volgende selectiecriteria: locatie van de onderneming, grootte van de onderneming, sector, periode van activiteit op de markt en hoogte van de jaarlijkse omzet. Door de relevante opties te kiezen, is het mogelijk de huidige positie te vergelijken met de ondernemingen die op elkaar lijken of met de ondernemingen met totaal andere kenmerken, die een inspiratiebron kunnen zijn voor de toekomstige ontwikkeling.</value>
+  </data>
+  <data name="Individual Results Text3" xml:space="preserve">
+    <value>De overige grafieken tonen de digitale scores in verhouding tot de intensiteit van de inzet voor innovatie. De volgende criteria zijn in de filters in aanmerking genomen: aandeel van de uitgaven voor innovatie, aandeel van innoverende producten en processen in de activiteiten van de onderneming, aandeel van succesvolle nieuwe implementaties in de activiteiten van de onderneming.</value>
+  </data>
+  <data name="loading..." xml:space="preserve">
+    <value>Aan het laden…</value>
+  </data>
+  <data name="No Result" xml:space="preserve">
+    <value>Geen vragenlijst</value>
+  </data>
+  <data name="Results Title" xml:space="preserve">
+    <value>Uw resultaten</value>
+  </data>
+  <data name="SurveyDropDownLabel" xml:space="preserve">
+    <value>Vragenlijst</value>
+  </data>
+  <data name="Surveys:" xml:space="preserve">
+    <value>Vragenlijsten:</value>
+  </data>
+</root>

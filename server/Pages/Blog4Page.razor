@@ -1,0 +1,146 @@
+﻿@page "/blog4"
+
+@inject IStringLocalizer<Blog4Page> L
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="col-10 offset-1">
+            <div class="row blog-position">
+                <div class="col-8">
+                    <RadzenHeading Size="H1" Text="@L["Title"]" />
+
+                    <p>@L["Text0_1"]</p>
+                    <div class="row">
+                        <div class="col-10">
+                            <p>@L["Text0_2"]</p>
+                        </div>
+                        <div class="col-2 blog-pic">
+                            <img src="/images/blog4_1.jpg" style="width: 100%">
+                        </div>
+                    </div>
+                    <p>@L["Text0_3"]</p>
+                    <p>@L["Text0_4"]</p>
+                    <div class="col-2 offset-1 blog-pic">
+                        <img src="/images/blog4_2.jpg" style="width: 100%">
+                    </div>
+                    <p>@L["Text0_5"]</p>
+                    <p>@L["Text0_6"]</p>
+                    <p>@((MarkupString)(L["Text0_7"].ToString()))</p>
+
+                    <RadzenHeading Size="H3" Text="@L["Text1"]" class="blog-header" />
+                    <p>@((MarkupString)(L["Text1_1"].ToString()))</p>
+                    <div class="blog-pic">
+                        <img src="/images/blog4_3.jpg" style="width: 100%">
+                    </div>
+                    <p>@L["Text1_2"]</p>
+                    <p>
+                        @L["Text1_3"]
+                        <ul style="list-style-type: disc; font-weight: bold">
+                            <li>@L["Text1_4"]</li>
+                            <li>@L["Text1_5"]</li>
+                            <li>@L["Text1_6"]</li>
+                        </ul>
+                    </p>
+
+                    <RadzenHeading Size="H3" Text="@L["Text2"]" class="blog-header" />
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog4_4.jpg" style="width: 100%">
+                    </div>
+                    <RadzenHeading Size="H4" Text="@L["Text2_1"]" class="blog-subheader" />
+                    <p>@L["Text2_1_1"]</p>
+                    <p>@L["Text2_1_2"]</p>
+                    <p>@L["Text2_1_3"]</p>
+                    <RadzenHeading Size="H4" Text="@L["Text2_2"]" class="blog-subheader" />
+                    <p>@L["Text2_2_1"]</p>
+                    <p>@L["Text2_2_2"]</p>
+
+                    <RadzenHeading Size="H3" Text="@L["Text3"]" class="blog-header" />
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog4_5.jpg" style="width: 100%">
+                    </div>
+                    <RadzenHeading Size="H4" Text="@L["Text3_1"]" class="blog-subheader" />
+                    <p>@L["Text3_1_1"]</p>
+                    <RadzenHeading Size="H4" Text="@L["Text3_2"]" class="blog-subheader" />
+                    <p>@L["Text3_2_1"]</p>
+                    <p>@((MarkupString)(L["Text3_2_2"].ToString()))</p>
+                    <p>@L["Text3_2_3"]</p>
+
+                    <RadzenHeading Size="H3" Text="@L["Text4"]" class="blog-header" />
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog4_6.jpg" style="width: 100%">
+                    </div>
+                    <p>@((MarkupString)(L["Text4_1"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text4_2"].ToString()))</p>
+                    <p>
+                        @((MarkupString)(L["Text4_3"].ToString()))
+                        <ul style="list-style-type: disc">
+                            <li>@((MarkupString)(L["Text4_4"].ToString()))</li>
+                            <li>@((MarkupString)(L["Text4_5"].ToString()))</li>
+                            <li>@((MarkupString)(L["Text4_6"].ToString()))</li>
+                        </ul>
+                    </p>
+                    <p>@((MarkupString)(L["Text4_7"].ToString()))</p>
+
+                    <RadzenHeading Size="H3" Text="@L["Text5"]" class="blog-header" />
+                    <p>@((MarkupString)(L["Text5_1"].ToString()))</p>
+                    <p>
+                        @L["Text5_2"]
+                        <ul style="list-style-type: disc">
+                            <li>@((MarkupString)(L["Text5_3"].ToString()))</li>
+                            <li>@((MarkupString)(L["Text5_4"].ToString()))</li>
+                            <li>@((MarkupString)(L["Text5_5"].ToString()))</li>
+                        </ul>
+                    </p>
+                    <p>@((MarkupString)(L["Text5_6"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text5_7"].ToString()))</p>
+                    <div class="row">
+                        <div class="col-2 offset-3 blog-pic">
+                            <img src="/images/blog4_7.jpg" style="height: 150px">
+                        </div>
+                        <div class="col-3 blog-pic">
+                            <img src="/images/blog4_8.jpg" style="height: 150px">
+                        </div>
+                    </div>
+
+                    <p>@L["Text5_8"]</p>
+                    <p>@((MarkupString)(L["Text5_9"].ToString()))</p>
+                    <p>@L["Text5_10"]</p>
+
+                    <RadzenHeading Size="H3" Text="@L["Text6"]" class="blog-header" />
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog4_9.jpg" style="height: 150px">
+                    </div>
+                    <p>@L["Text6_1"]</p>
+                    <p>@((MarkupString)(L["Text6_2"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text6_3"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text6_4"].ToString()))</p>
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog4_10.jpg" style="height: 150px">
+                    </div>
+                    <p>@((MarkupString)(L["Text6_5"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text6_6"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text6_7"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text6_8"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text6_9"].ToString()))</p>
+                    <p>@L["Text6_10"]</p>
+
+                    <RadzenHeading Size="H3" Text="@L["Text7"]" class="blog-header" />
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog4_11.jpg" style="width: 100%">
+                    </div>
+                    <p>@((MarkupString)(L["Text7_1"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text7_2"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text7_3"].ToString()))</p>
+                    <p>@((MarkupString)(L["Text7_4"].ToString()))</p>
+                </div>
+
+                <div class="col-4">
+                    <div class="d-flex flex-column">
+                        <News />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ChildContent>
+</RadzenContent>
+

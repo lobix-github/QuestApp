@@ -1,0 +1,367 @@
+﻿@page "/results"
+@page "/results/{id:int}/{countriesId:int}/{citySizesId:int}/{numOfEmployeesId:int}/{sectorsId:int}/{serviceAreasId:int}/{operationTimesId:int}/{turnoversId:int}/{enterpriseRolesId:int}/{answers1Id}/{answers2Id}/{answers3Id}/{bubbleCountriesId:int}/{bubbleCitySizesId:int}/{bubbleNumOfEmployeesId:int}/{bubbleSectorsId:int}/{bubbleServiceAreasId:int}/{bubbleOperationTimesId:int}/{bubbleTurnoversId:int}/{bubbleEnterpriseRolesId:int}"
+
+@using QuestApp.DTO
+
+@inject IStringLocalizer<Register> FilterL
+
+@attribute [Authorize]
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="col-10 offset-1">
+            <div class="row hideWhenPrint">
+                <div class="col-5">
+                    <RadzenHeading Size="H1" Text="@L["Results Title"]" />
+                </div>
+                <div class="col-7">
+                    <div class="d-flex flex-row justify-content-end align-items-center" style="height: 100%">
+                        <RadzenButton ButtonStyle="ButtonStyle.Primary" Icon="print" Text="@L["Generate Report"]" Disabled="@(filter.SelectedSubmit == null || !isRendered)" Click=@GenerateReportClick />
+                        @*<RadzenButton ButtonStyle="ButtonStyle.Primary" Icon="print" Text="@L["Generate Report"]" Disabled="@(filter.SelectedSubmit == null)" Click="@(() => JS.InvokeVoidAsync("PrintPDF"))" />*@
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-bottom: 1rem" class="row hideWhenPrint">
+                <div class="col-6">
+                    <RadzenLabel Text="@L["Surveys:"]" />
+                    <RadzenDropDown TValue="SubmitDTO" Style="width:100%" Data=@submits TextProperty="Title" @bind-Value="@filter.SelectedSubmit" Change=@OnSurveyChange />
+                </div>
+            </div>
+
+            @if (filter.SelectedSubmit == null)
+            {
+                <div class="spinner" />
+            }
+            else if (!submits.Any())
+            {
+                <RadzenHeading Size="H2" Text="@L["No Result"]" />
+            }
+            else
+            {
+                <div class="row margin-bottom">
+                    <div class="col text-center text-bold">
+                        <RadzenHeading Size="H2" Text="@L["Benchmarking Report"]" />
+                        @L["Benchmarking Report Text1"]
+                        <p></p>
+                        <p>
+                            <div class="text-normal">@L["Benchmarking Report Text2"]</div>
+                            <div>@filter.SelectedSubmit.User.Name</div>
+                            <div class="text-normal">@L["Benchmarking Report Text3"]</div>
+                            <div>@filter.SelectedSubmit.Title</div>
+                        </p>
+                    </div>
+                </div>
+
+                <RadzenHeading Size="H2" Text="@L["General Results"]" Style="text-align: center" />
+                <p>
+                    @L["General Results Text1"]
+                    <ul>
+                        <li>@((MarkupString)(L["General Results IPE"].ToString()))</li>
+                        <li>@((MarkupString)(L["General Results IPDC"].ToString()))</li>
+                        <li>@((MarkupString)(L["General Results IPDI"].ToString()))</li>
+                        <li>@((MarkupString)(L["General Results D/E"].ToString()))</li>
+                    </ul>
+                </p>
+                <p>@L["General Results Text2"]</p>
+                <div class="row">
+                    <div class="col-12">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <SummaryTable @ref="summaryTable" Filter="@filter" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <RadzenHeading Size="H2" Text="@L["Individual Results"]" Style="text-align: center" />
+                <p>@L["Individual Results Text1"]</p>
+                <p>@L["Individual Results Text2"]</p>
+
+                <div class="row align-items-center" style="font-size: 12px">
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["Country"]" />
+                    </div>
+                    <div class="col-3 user-data-text">
+                        <RadzenLabel Text="@FilterL["NumberOfEmployees"]" />
+                        <span class="user-data-text-asterix">@FilterL["NumberOfEmployeesAsterix"]</span>
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["OperationTime"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["Turnover"]" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.countries TextProperty="Text" @bind-Value="@filter.selectedCountries" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.numOfEmployees TextProperty="Text" @bind-Value="@filter.selectedNumOfEmployees" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.operationTimes TextProperty="Text" @bind-Value="@filter.selectedOperationTimes" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.turnovers TextProperty="Text" @bind-Value="@filter.selectedTurnovers" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                </div>
+                <div class="row align-items-center" style="font-size: 12px">
+                    <div class="col-3 user-data-text">
+                        <RadzenLabel Text="@FilterL["CitySize"]" />
+                        <span class="user-data-text-asterix">@FilterL["CitySizeAsterix"]</span>
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["Sector"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["ServiceArea"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["EnterpriseRole"]" />
+                    </div>
+                </div>
+                <div class="row margin-bottom">
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.citySizes TextProperty="Text" @bind-Value="@filter.selectedCitySizes" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.sectors TextProperty="Text" @bind-Value="@filter.selectedSectors" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.serviceAreas TextProperty="Text" @bind-Value="@filter.selectedServiceAreas" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@filter.enterpriseRoles TextProperty="Text" @bind-Value="@filter.selectedEnterpriseRoles" Multiple="true" Style="width:100%" Change="@OnFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                </div>
+
+                <div class="row margin-bottom">
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <GeneralNoneAnyGraph />
+                        </PreRenderLoadingMessage>
+                    </div>
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserNoneAnyGraph @ref="userNoneAnyGraph" Filter="@filter" Section2Filter="false" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <div class="row margin-bottom">
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <GeneralDoubleNoneAnyGraph />
+                        </PreRenderLoadingMessage>
+                    </div>
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserDoubleNoneAnyGraph @ref="userDoubleNoneAnyGraph" Filter="@filter" Section2Filter="false" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <div class="row margin-bottom">
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <GeneralGraph />
+                        </PreRenderLoadingMessage>
+                    </div>
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserGraph @ref="userGraph" Filter="@filter" Section2Filter="false" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <p>@L["Individual Results Text3"]</p>
+                <div class="row align-items-center" style="font-size: 12px">
+                    <div class="col-4">
+                        <RadzenLabel Text="@L["FilterAnswers1"]" />
+                    </div>
+                    <div class="col-4">
+                        <RadzenLabel Text="@L["FilterAnswers2"]" />
+                    </div>
+                    <div class="col-4">
+                        <RadzenLabel Text="@L["FilterAnswers3"]" />
+                    </div>
+                </div>
+                <div class="row margin-bottom">
+                    <div class="col-4">
+                        <RadzenDropDown Data=@filter.answers1 TextProperty="Text" @bind-Value="@filter.selectedAnswers1" Multiple="true" Style="width:100%" Change="@OnFilter3Change" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-4">
+                        <RadzenDropDown Data=@filter.answers2 TextProperty="Text" @bind-Value="@filter.selectedAnswers2" Multiple="true" Style="width:100%" Change="@OnFilter3Change" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-4">
+                        <RadzenDropDown Data=@filter.answers3 TextProperty="Text" @bind-Value="@filter.selectedAnswers3" Multiple="true" Style="width:100%" Change="@OnFilter3Change" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                </div>
+
+                <div class="row margin-bottom">
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <GeneralNoneAnyGraph />
+                        </PreRenderLoadingMessage>
+                    </div>
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserNoneAnyGraph @ref="userNoneAnyGraph2" Filter="@filter" Section2Filter="true" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <div class="row margin-bottom">
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <GeneralDoubleNoneAnyGraph />
+                        </PreRenderLoadingMessage>
+                    </div>
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserDoubleNoneAnyGraph @ref="userDoubleNoneAnyGraph2" Filter="@filter" Section2Filter="true" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <div class="row margin-bottom">
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <GeneralGraph />
+                        </PreRenderLoadingMessage>
+                    </div>
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserGraph @ref="userGraph2" Filter="@filter" Section2Filter="true" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <RadzenHeading Size="H2" Text="@L["Effectiveness"]" Style="text-align: center" />
+                <p>@((MarkupString)(L["Effectiveness Text1"].ToString()))</p>
+                <div class="row align-items-center" style="font-size: 12px">
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["Country"]" />
+                    </div>
+                    <div class="col-3 user-data-text">
+                        <RadzenLabel Text="@FilterL["NumberOfEmployees"]" />
+                        <span class="user-data-text-asterix">@FilterL["NumberOfEmployeesAsterix"]</span>
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["OperationTime"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["Turnover"]" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.countries TextProperty="Text" @bind-Value="@bubbleFilter.selectedCountries" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.numOfEmployees TextProperty="Text" @bind-Value="@bubbleFilter.selectedNumOfEmployees" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.operationTimes TextProperty="Text" @bind-Value="@bubbleFilter.selectedOperationTimes" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.turnovers TextProperty="Text" @bind-Value="@bubbleFilter.selectedTurnovers" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                </div>
+                <div class="row align-items-center" style="font-size: 12px">
+                    <div class="col-3 user-data-text">
+                        <RadzenLabel Text="@FilterL["CitySize"]" />
+                        <span class="user-data-text-asterix">@FilterL["CitySizeAsterix"]</span>
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["Sector"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["ServiceArea"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenLabel Text="@FilterL["EnterpriseRole"]" />
+                    </div>
+                </div>
+                <div class="row margin-bottom">
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.citySizes TextProperty="Text" @bind-Value="@bubbleFilter.selectedCitySizes" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.sectors TextProperty="Text" @bind-Value="@bubbleFilter.selectedSectors" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.serviceAreas TextProperty="Text" @bind-Value="@bubbleFilter.selectedServiceAreas" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                    <div class="col-3">
+                        <RadzenDropDown Data=@bubbleFilter.enterpriseRoles TextProperty="Text" @bind-Value="@bubbleFilter.selectedEnterpriseRoles" Multiple="true" Style="width:100%" Change="@OnBubbleFilterChange" SelectedItemsText="@SharedResL["DropDown Selected Items"]" />
+                    </div>
+                </div>
+
+                <div class="row margin-bottom">
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserNoneAnyBubbleGraph @ref="userNoneAnyBubbleGraph" Filter="@bubbleFilter" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                    <div class="col-6">
+                        <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                            <UserBubbleGraph @ref="userBubbleGraph" Filter="@bubbleFilter" />
+                        </PreRenderLoadingMessage>
+                    </div>
+                </div>
+
+                <p>@((MarkupString)(L["Effectiveness Text2"].ToString()))</p>
+                <p>@L["Effectiveness Text3"]</p>
+
+                <div class="hideWhenPrint">
+                    <RadzenHeading Size="H2" Text="@L["Feedback"]" Style="text-align: center" />
+                    @((MarkupString)(L["Feedback Text1"].ToString()))
+                    <div style="text-align: right; margin-right: 10%">
+                        <p>@L["Digital Innovation Team"]</p>
+                    </div>
+                </div>
+            }
+        </div>
+    </ChildContent>
+</RadzenContent>
+
+@code {
+    UserNoneAnyGraphBase userNoneAnyGraph;
+    UserNoneAnyGraphBase userNoneAnyGraph2;
+    UserDoubleNoneAnyGraphBase userDoubleNoneAnyGraph;
+    UserDoubleNoneAnyGraphBase userDoubleNoneAnyGraph2;
+    UserGraphBase userGraph;
+    UserGraphBase userGraph2;
+    SummaryTableBase summaryTable;
+    UserNoneAnyBubbleGraph userNoneAnyBubbleGraph;
+    UserBubbleGraph userBubbleGraph;
+
+    void OnFilterChange()
+    {
+        userNoneAnyGraph.OnChange();
+        userDoubleNoneAnyGraph.OnChange();
+        userGraph.OnChange();
+    }
+
+    void OnFilter3Change()
+    {
+        userNoneAnyGraph2.OnChange();
+        userDoubleNoneAnyGraph2.OnChange();
+        userGraph2.OnChange();
+    }
+
+    void OnBubbleFilterChange()
+    {
+        userNoneAnyBubbleGraph.OnChange();
+        userBubbleGraph.OnChange();
+    }
+
+    void OnSurveyChange()
+    {
+        OnFilterChange();
+        OnFilter3Change();
+        OnBubbleFilterChange();
+        summaryTable.OnChange();
+    }
+}

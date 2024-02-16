@@ -1,0 +1,27 @@
+﻿@inherits SummaryTableBase
+
+<table class="summary-table-report">
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td>@SharedResL["Total Score (Average)"]</td>
+            <td>@SharedResL["Your Industry Score (Average)"]</td>
+            <td>@SharedResL["Your Score"]</td>
+            @for (int i = 0; i < categories.Count; i++)
+            {
+                <td>@categories[i].Title</td>            }
+        </tr>
+
+        @for (int index = 0; index < rows.Count(); index++)
+        {
+            <tr>
+                <td>@((MarkupString)SharedResL[@rows[index].Title].ToString())</td>
+                @for (int i = -3; i < rows[index].Values.Count; i++)
+                {
+                    <td style=@GetRowStyle(rows[index], i)>@rows[index].ValueStr(i)</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+

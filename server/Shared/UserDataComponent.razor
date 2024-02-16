@@ -1,0 +1,113 @@
+﻿@inherits ComponentBase
+
+@using Radzen.Blazor
+@using QuestApp.Pages
+@using QuestApp.DTO
+
+@inject IStringLocalizer<Register> L
+@inject IStringLocalizer<SharedRes> SharedResL
+
+<div style="margin-bottom: 1rem; font-size: 14px">
+    <RadzenLabel Text="@L["Email"]" />
+    <RadzenTextBox style="display: block; width: 100%" @bind-Value="@(user.Email)" Disabled="@isEdit" />
+    <RadzenLabel Text="@L["Name"]" />
+    <RadzenTextBox id="inputName" style="display: block; width: 100%" @bind-Value="@(user.Name)" />
+    <RadzenLabel Text="@L["Country"]" />
+    <RadzenDropDown TValue="EnumIdText<CountryId>" Style="width:100%"
+                    Data=@countries TextProperty="Text" @bind-Value="@selectedCountry"
+                    Change=@(args => user.Country = countries.Single(x => x.Id == selectedCountry.Id) ) />
+    <div class="user-data-text">
+        <RadzenLabel Text="@L["CitySize"]" />
+        <span class="user-data-text-asterix">@L["CitySizeAsterix"]</span>
+    </div>
+    <RadzenDropDown TValue="EnumIdText<CitySizeId>" Style="width:100%"
+                    Data=@citySizes TextProperty="Text" @bind-Value="@selectedCitySize"
+                    Change=@(args => user.CitySize = citySizes.Single(x => x.Id == selectedCitySize.Id) ) />
+    <div class="user-data-text">
+        <RadzenLabel Text="@L["NumberOfEmployees"]" />
+        <span class="user-data-text-asterix">@L["NumberOfEmployeesAsterix"]</span>
+    </div>
+    <RadzenDropDown TValue="EnumIdText<NumberOfEmployeesId>" Style="width:100%"
+                    Data=@numOfEmployees TextProperty="Text" @bind-Value="@selectedNumOfEmpl"
+                    Change=@(args => user.NumberOfEmployees = numOfEmployees.Single(x => x.Id == selectedNumOfEmpl.Id) ) />
+    <RadzenLabel Text="@L["Sector"]" />
+    <RadzenDropDown TValue="EnumIdText<SectorId>" Style="width:100%"
+                    Data=@sectors TextProperty="Text" @bind-Value="@selectedSector"
+                    Change=@(args => { user.Sector = sectors.Single(x => x.Id == selectedSector.Id); if (user.Sector.Id != SectorId.SectorId_Manufacturing) { user.ServiceArea = selectedServiceArea = serviceAreas.Single(x => x.Id == ServiceAreaId.ServiceAreaId_None); } } ) />
+    <RadzenLabel Text="@L["ServiceArea"]" />
+    <RadzenDropDown TValue="EnumIdText<ServiceAreaId>" Style="width:100%" Disabled="@(user.Sector?.Id != SectorId.SectorId_Manufacturing)"
+                    Data=@serviceAreas TextProperty="Text" @bind-Value="@selectedServiceArea"
+                    Change=@(args => user.ServiceArea = serviceAreas.Single(x => x.Id == selectedServiceArea.Id) ) />
+    <RadzenLabel Text="@L["OperationTime"]" />
+    <RadzenDropDown TValue="EnumIdText<OperationTimeId>" Style="width:100%"
+                    Data=@operationTimes TextProperty="Text" @bind-Value="@selectedOperationTime"
+                    Change=@(args => user.OperationTime = operationTimes.Single(x => x.Id == selectedOperationTime.Id) ) />
+    <RadzenLabel Text="@L["Turnover"]" />
+    <RadzenDropDown TValue="EnumIdText<TurnoverId>" Style="width:100%"
+                    Data=@turnovers TextProperty="Text" @bind-Value="@selectedTurnover"
+                    Change=@(args => user.Turnover = turnovers.Single(x => x.Id == selectedTurnover.Id) ) />
+    <RadzenLabel Text="@L["EnterpriseRole"]" />
+    <RadzenDropDown TValue="EnumIdText<EnterpriseRoleId>" Style="width:100%"
+                    Data=@enterpriseRoles TextProperty="Text" @bind-Value="@selectedEnterpriseRole"
+                    Change=@(args => user.EnterpriseRole = enterpriseRoles.Single(x => x.Id == selectedEnterpriseRole.Id) ) />
+    <RadzenLabel Text="@L["Password"]" />
+    <RadzenPassword style="display: block; width: 100%" @bind-Value="@(user.Password)" />
+    <RadzenLabel Text="@L["Confirm Password"]" />
+    <RadzenPassword style="display: block; width: 100%" @bind-Value="@(user.ConfirmPassword)" />
+</div>
+
+@code {
+    [Parameter] public UserDTO user { get; set; }
+    [Parameter] public bool isEdit { get; set; }
+
+    private EnumIdText<CountryId> selectedCountry;
+    private IEnumerable<EnumIdText<CountryId>> countries;
+
+    private EnumIdText<CitySizeId> selectedCitySize;
+    private IEnumerable<EnumIdText<CitySizeId>> citySizes;
+
+    private EnumIdText<NumberOfEmployeesId> selectedNumOfEmpl;
+    private IEnumerable<EnumIdText<NumberOfEmployeesId>> numOfEmployees;
+
+    private EnumIdText<SectorId> selectedSector;
+    private IEnumerable<EnumIdText<SectorId>> sectors;
+
+    private EnumIdText<ServiceAreaId> selectedServiceArea;
+    private IEnumerable<EnumIdText<ServiceAreaId>> serviceAreas;
+
+    private EnumIdText<OperationTimeId> selectedOperationTime;
+    private IEnumerable<EnumIdText<OperationTimeId>> operationTimes;
+
+    private EnumIdText<TurnoverId> selectedTurnover;
+    private IEnumerable<EnumIdText<TurnoverId>> turnovers;
+
+    private EnumIdText<EnterpriseRoleId> selectedEnterpriseRole;
+    private IEnumerable<EnumIdText<EnterpriseRoleId>> enterpriseRoles;
+
+    protected override void OnInitialized()
+    {
+        countries = Enum.GetValues(typeof(CountryId)).OfType<CountryId>().Select(x => new EnumIdText<CountryId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedCountry = countries.FirstOrDefault(x => x.Id == user.Country?.Id);
+
+        citySizes = Enum.GetValues(typeof(CitySizeId)).OfType<CitySizeId>().Select(x => new EnumIdText<CitySizeId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedCitySize = citySizes.FirstOrDefault(x => x.Id == user.CitySize?.Id);
+
+        numOfEmployees = Enum.GetValues(typeof(NumberOfEmployeesId)).OfType<NumberOfEmployeesId>().Select(x => new EnumIdText<NumberOfEmployeesId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedNumOfEmpl = numOfEmployees.FirstOrDefault(x => x.Id == user.NumberOfEmployees?.Id);
+
+        sectors = Enum.GetValues(typeof(SectorId)).OfType<SectorId>().Select(x => new EnumIdText<SectorId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedSector = sectors.FirstOrDefault(x => x.Id == user.Sector?.Id);
+
+        serviceAreas = Enum.GetValues(typeof(ServiceAreaId)).OfType<ServiceAreaId>().Select(x => new EnumIdText<ServiceAreaId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedServiceArea = serviceAreas.FirstOrDefault(x => x.Id == user.ServiceArea?.Id);
+
+        operationTimes = Enum.GetValues(typeof(OperationTimeId)).OfType<OperationTimeId>().Select(x => new EnumIdText<OperationTimeId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedOperationTime = operationTimes.FirstOrDefault(x => x.Id == user.OperationTime?.Id);
+
+        turnovers = Enum.GetValues(typeof(TurnoverId)).OfType<TurnoverId>().Select(x => new EnumIdText<TurnoverId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedTurnover = turnovers.FirstOrDefault(x => x.Id == user.Turnover?.Id);
+
+        enterpriseRoles = Enum.GetValues(typeof(EnterpriseRoleId)).OfType<EnterpriseRoleId>().Select(x => new EnumIdText<EnterpriseRoleId>() { Id = x, Text = SharedResL[x.ToString()] });
+        selectedEnterpriseRole = enterpriseRoles.FirstOrDefault(x => x.Id == user.EnterpriseRole?.Id);
+    }
+}

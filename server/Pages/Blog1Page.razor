@@ -1,0 +1,66 @@
+﻿@page "/blog1"
+
+@inject IStringLocalizer<Blog1Page> L
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="col-10 offset-1">
+            <div class="row blog-position">
+                <div class="col-8">
+                    <p>@L["Author"]</p>
+                    <RadzenHeading Size="H1" Text="@L["Title"]" />
+
+                    <p>@L["Text0_1"]</p>
+                    <p>@L["Text0_2"]</p>
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog1_1.jpg" style="width: 100%">
+                        <span style="font-style: italic">
+                            <a target="_blank" href="https://unsplash.com/photos/5Q07sS54D0Q">https://unsplash.com/photos/5Q07sS54D0Q</a>
+                        </span>
+                    </div>
+
+                    <RadzenHeading Size="H3" Text="@L["Text1"]" class="blog-header" />
+                    <p>@L["Text1_1"]</p>
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog1_2.jpg" style="width: 100%">
+                        <span style="font-style: italic">
+                            <a target="_blank" href="https://unsplash.com/photos/YUuSAJkS3U4">https://unsplash.com/photos/YUuSAJkS3U4</a>
+                        </span>
+                    </div>
+
+                    <RadzenHeading Size="H3" Text="@L["Text2"]" class="blog-header" />
+                    <p>@L["Text2_1"]</p>
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog1_3.jpg" style="width: 100%">
+                        <span style="font-style: italic">
+                            <a target="_blank" href="https://unsplash.com/photos/npxXWgQ33ZQ">https://unsplash.com/photos/npxXWgQ33ZQ</a>
+                        </span>
+                    </div>
+
+                    <RadzenHeading Size="H3" Text="@L["Text3"]" class="blog-header" />
+                    <p>@L["Text3_1"]</p>
+                    <p>@L["Text3_2"]</p>
+                    <p>@L["Text3_3"]</p>
+                    <p>@L["Text3_4"]</p>
+                    <p>@L["Text3_5"]</p>
+                    <div class="col-10 offset-1 blog-pic">
+                        <img src="/images/blog1_4.jpg" style="width: 100%">
+                        <span style="font-style: italic">
+                            <a target="_blank" href="https://unsplash.com/photos/2FPjlAyMQTA">https://unsplash.com/photos/2FPjlAyMQTA</a>
+                        </span>
+                    </div>
+                    <p>@L["Text3_6"]</p>
+                    <p>@L["Text3_7"]</p>
+                    <p>@L["Text3_8"]</p>
+                </div>
+
+                <div class="col-4">
+                    <div class="d-flex flex-column">
+                        <News />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ChildContent>
+</RadzenContent>
+

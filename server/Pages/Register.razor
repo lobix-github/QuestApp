@@ -1,0 +1,53 @@
+﻿@page "/register"
+
+@inherits RegisterBase
+
+@using QuestApp.DTO
+
+<AuthorizeView>
+    <Authorized>
+        <AlertComponent AlertType="danger"><span class="oi oi-warning mr-2" /><strong>@L["Already logged in!"]</strong></AlertComponent>
+    </Authorized>    
+    <NotAuthorized>
+        <RadzenContent Container="main">
+            <ChildContent>
+                <div class="col-10 offset-1">
+                    <RadzenHeading Size="H1" Text="@L["Register Page"]" Style="margin-bottom: 1rem" />
+                    <div style="font-size: 14px; margin-bottom: 1rem">
+                        <RadzenLabel Text="@L["Text1"]" />
+                        <RadzenLabel Text="@L["Text2"]" />
+                        <RadzenLabel Text="@L["Text3"]" />
+                    </div>
+
+                    <div class="row align-items-center">
+                        <div class="col-4" style="margin-bottom: 1rem">
+                            <RadzenTemplateForm TItem="UserDTO" Data="@user" Submit="@HandleValidSubmit" InvalidSubmit="@HandleInvalidSubmit">
+                                <ChildContent Context="Another_Name">
+                                    <DataAnnotationsValidator />
+                                    <UserDataComponent user="@user" isEdit="@IsEdit" />
+
+                                    <div>
+                                        <span hidden="@DontShowError">
+                                            <AlertComponent AlertType="danger"><span class="oi oi-warning mr-2" /><strong>@L["Error"]</strong><span class="mr-4" />@ValidationErrorMsg</AlertComponent>
+                                        </span>
+                                    </div>
+                                    <div>
+                                        <RadzenButton ButtonStyle="ButtonStyle.Primary" ButtonType="ButtonType.Submit" Icon="save" Text="@L["Register"]" />
+                                        <RadzenButton ButtonStyle="ButtonStyle.Light" Text="@L["Cancel"]" Click="@(() => NavigationManager.NavigateTo("/"))" />
+                                    </div>
+                                </ChildContent>
+                            </RadzenTemplateForm>
+                        </div>
+                        <div class="col-8">
+                            <div class="row justify-content-center">
+                                <img src="/images/pic2.jpg" style="width: 100%">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </ChildContent>
+        </RadzenContent>
+    </NotAuthorized>
+</AuthorizeView>
+
+

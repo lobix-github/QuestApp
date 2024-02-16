@@ -1,0 +1,281 @@
+﻿@page "/report/{submitId:int}/{countriesId:int}/{citySizesId:int}/{numOfEmployeesId:int}/{sectorsId:int}/{serviceAreasId:int}/{operationTimesId:int}/{turnoversId:int}/{enterpriseRolesId:int}/{answers1Id}/{answers2Id}/{answers3Id}/{bubbleCountriesId:int}/{bubbleCitySizesId:int}/{bubbleNumOfEmployeesId:int}/{bubbleSectorsId:int}/{bubbleServiceAreasId:int}/{bubbleOperationTimesId:int}/{bubbleTurnoversId:int}/{bubbleEnterpriseRolesId:int}"
+@layout ReportLayout
+
+<div class="container report">
+    <div class="row margin-bottom">
+        <div class="col text-center text-bold">
+            <RadzenHeading Size="H2" Text="@L["Benchmarking Report"]" />
+            @L["Benchmarking Report Text1"]
+            <p></p>
+            <p>
+                <div class="text-normal">@L["Benchmarking Report Text2"]</div>
+                <div>@filter.SelectedSubmit.User.Name</div>
+                <div class="text-normal">@L["Benchmarking Report Text3"]</div>
+                <div>@filter.SelectedSubmit.Title</div>
+            </p>
+        </div>
+    </div>
+
+    <RadzenHeading Size="H2" Text="@L["General Results"]" Style="text-align: center" />
+    <p>
+        @L["General Results Text1"]
+        <ul>
+            <li>@((MarkupString)(L["General Results IPE"].ToString()))</li>
+            <li>@((MarkupString)(L["General Results IPDC"].ToString()))</li>
+            <li>@((MarkupString)(L["General Results IPDI"].ToString()))</li>
+            <li>@((MarkupString)(L["General Results D/E"].ToString()))</li>
+        </ul>
+    </p>
+    <p>@L["General Results Text2"]</p>
+    <div class="row">
+        <div class="col-12">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <SummaryTable Filter="@filter" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <RadzenHeading Size="H2" Text="@L["Individual Results"]" Style="text-align: center" />
+    <p>@L["Individual Results Text1"]</p>
+    <p>@L["Individual Results Text2"]</p>
+
+    <div class="row align-items-center" style="font-size: 12px">
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["Country"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["NumberOfEmployees"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["OperationTime"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["Turnover"]" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            @((MarkupString)filter.selectedCountries.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)filter.selectedNumOfEmployees.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)filter.selectedOperationTimes.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)filter.selectedTurnovers.ToListString())
+        </div>
+    </div>
+    <div class="row align-items-center" style="font-size: 12px">
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["CitySize"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["Sector"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["ServiceArea"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["EnterpriseRole"]" />
+        </div>
+    </div>
+    <div class="row margin-bottom">
+        <div class="col-3">
+            @((MarkupString)filter.selectedCitySizes.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)filter.selectedSectors.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)filter.selectedServiceAreas.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)filter.selectedEnterpriseRoles.ToListString())
+        </div>
+    </div>
+
+    <div class="row margin-bottom">
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <GeneralNoneAnyGraph />
+            </PreRenderLoadingMessage>
+        </div>
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserNoneAnyGraph Filter="@filter" Section2Filter="false" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <div class="row margin-bottom">
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <GeneralDoubleNoneAnyGraph />
+            </PreRenderLoadingMessage>
+        </div>
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserDoubleNoneAnyGraph Filter="@filter" Section2Filter="false" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <div class="row margin-bottom">
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <GeneralGraph />
+            </PreRenderLoadingMessage>
+        </div>
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserGraph Filter="@filter" Section2Filter="false" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <p>@L["Individual Results Text3"]</p>
+    <div class="row align-items-center" style="font-size: 12px">
+        <div class="col-4">
+            <RadzenLabel Text="@L["FilterAnswers1"]" />
+        </div>
+        <div class="col-4">
+            <RadzenLabel Text="@L["FilterAnswers2"]" />
+        </div>
+        <div class="col-4">
+            <RadzenLabel Text="@L["FilterAnswers3"]" />
+        </div>
+    </div>
+    <div class="row margin-bottom">
+        <div class="col-4">
+            @((MarkupString)filter.selectedAnswers1.ToListString())
+        </div>
+        <div class="col-4">
+            @((MarkupString)filter.selectedAnswers2.ToListString())
+        </div>
+        <div class="col-4">
+            @((MarkupString)filter.selectedAnswers3.ToListString())
+        </div>
+    </div>
+
+    <div class="row margin-bottom">
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <GeneralNoneAnyGraph />
+            </PreRenderLoadingMessage>
+        </div>
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserNoneAnyGraph Filter="@filter" Section2Filter="true" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <div class="row margin-bottom">
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <GeneralDoubleNoneAnyGraph />
+            </PreRenderLoadingMessage>
+        </div>
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserDoubleNoneAnyGraph Filter="@filter" Section2Filter="true" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <div class="row margin-bottom">
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <GeneralGraph />
+            </PreRenderLoadingMessage>
+        </div>
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserGraph Filter="@filter" Section2Filter="true" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <RadzenHeading Size="H2" Text="@L["Effectiveness"]" Style="text-align: center" />
+    <p>@((MarkupString)(L["Effectiveness Text1"].ToString()))</p>
+    <div class="row align-items-center" style="font-size: 12px">
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["Country"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["NumberOfEmployees"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["OperationTime"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["Turnover"]" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedCountries.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedNumOfEmployees.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedOperationTimes.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedTurnovers.ToListString())
+        </div>
+    </div>
+    <div class="row align-items-center" style="font-size: 12px">
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["CitySize"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["Sector"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["ServiceArea"]" />
+        </div>
+        <div class="col-3">
+            <RadzenLabel Text="@FilterL["EnterpriseRole"]" />
+        </div>
+    </div>
+    <div class="row margin-bottom">
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedCitySizes.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedSectors.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedServiceAreas.ToListString())
+        </div>
+        <div class="col-3">
+            @((MarkupString)bubbleFilter.selectedEnterpriseRoles.ToListString())
+        </div>
+    </div>
+
+    <div class="row margin-bottom">
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserNoneAnyBubbleGraph Filter="@bubbleFilter" />
+            </PreRenderLoadingMessage>
+        </div>
+        <div class="col-6">
+            <PreRenderLoadingMessage OnRendered="OnSpinnerRendered">
+                <UserBubbleGraph Filter="@bubbleFilter" />
+            </PreRenderLoadingMessage>
+        </div>
+    </div>
+
+    <div class="hideWhenPrint">
+        <RadzenButton Text="@L["Print"]" ButtonStyle="ButtonStyle.Primary" Disabled="@(!isRendered)" Click="@(() => JS.InvokeVoidAsync("PrintPDF"))"></RadzenButton>
+        <RadzenButton Text="@L["Close"]" ButtonStyle="ButtonStyle.Light" Disabled="@(!isRendered)" Click="@(() => NavigationManager.NavigateTo(ResultsUri))"></RadzenButton>
+    </div>
+</div>
+
+@code{
+    string ResultsUri => NavigationManager.ToBaseRelativePath(NavigationManager.Uri).Replace("report", "results");
+}

@@ -1,0 +1,37 @@
+﻿@inherits TableGraphBase
+
+<table class="table-report">
+    <tbody>
+        <tr>
+            <td>&nbsp;</td>
+            <td style="font-weight: bold; border-top: @BoldBorderStyle; border-left: @BoldBorderStyle; border-right: @BoldBorderStyle">@IndexTitle</td>
+            @for (int i = 0; i < Categories.Count; i++)
+            {
+                <td>@Categories[i].Title</td>
+            }
+        </tr>
+
+        @foreach (var sectorId in Rows.Keys)
+        {
+            <tr>
+                <td>@SharedResL[sectorId.ToString()]</td>
+
+                @for (int i = -1; i < Rows[sectorId].Count; i++)
+                {
+                    <td style=@GetRowStyle(sectorId, i)>&nbsp;</td>
+                }
+            </tr>
+        }
+    </tbody>
+</table>
+
+<table class="table-report" style="margin-top: 1rem">
+    <tbody>
+        <tr>
+            @for (int i = 2; i <= 10 ; i += 2)
+            {
+                <td style="text-align: center; background: @GetColor(i)">@GetColorCaption(i)</td>
+            }
+        </tr>
+    </tbody>
+</table>

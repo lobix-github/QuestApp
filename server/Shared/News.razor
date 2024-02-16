@@ -1,0 +1,35 @@
+﻿@inherits ComponentBase
+
+@inject IStringLocalizer<App> L
+
+@using Radzen
+@using Radzen.Blazor
+
+<div class="d-flex flex-column news">
+    <p style="font-size: 28px; color: #000000; padding: 20px 0 0 10px">@L["RECENT POSTS"]</p>
+
+    <div style="margin-bottom: 10px">
+        <a class="news-link" href=/blog1>
+            <img class="p-img" width="80" height="80" src="/images/final-definitions.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 10px">
+            @L["Blog1Title"]
+        </a>
+    </div>
+    <div style="margin-bottom: 10px">
+        <a class="news-link" href=/blog2>
+            <img class="p-img" width="80" height="80" src="/images/final-definitions.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 10px">
+            @L["Blog2Title"]
+        </a>
+    </div>
+    <div style="margin-bottom: 10px">
+        <a class="news-link" href=/blog3>
+            <img class="p-img" width="80" height="80" src="/images/final-definitions.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 10px">
+            @L["Blog3Title"]
+        </a>
+    </div>
+    <div style="margin-bottom: 10px">
+        <a class="news-link" href=/blog4>
+            <img class="p-img" width="80" height="80" src="/images/final-definitions.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 10px">
+            @L["Blog4Title"]
+        </a>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+﻿@inherits ComponentBase
+
+@inject IStringLocalizer<App> L
+
+@using Radzen
+@using Radzen.Blazor
+
+<div class="body-footer">
+    <div class="col-10 offset-1">
+        <div class="row">
+            <div class="col-4">
+                <div class="d-flex flex-column">
+                    <RadzenLabel Text="@L["DIGITAL INNOVATION"]" Style="font-size: 17px; margin-bottom: 16px; color: #515151" />
+                    <p>@L["DIGITAL INNOVATION TEXT"]</p>
+                    <RadzenLabel Text="@L["CONTACT"]" Style="font-size: 17px; margin-bottom: 16px; margin-top: 20px; color: #515151; border-top: 1px solid #d8d8d8; padding-top: 20px" />
+                    @((MarkupString)(L["CONTACT TEXT"].ToString()))
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-column">
+                    <div style="margin-bottom: 20px">
+                        <a class="footer-link" target="_blank" href="https://www.innovatingdigitally.eu/final-definitions-based-on-literature/">
+                            <img width="80" height="80" src="/images/final-definitions.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 0">
+                            @L["FINAL DEFINITIONS"]
+                        </a>
+                        <div>@L["FINAL DEFINITIONS TEXT"]</div>
+                    </div>
+                    <div style="margin-bottom: 20px">
+                        <a class="footer-link" target="_blank" href="https://www.innovatingdigitally.eu/how-to-innovate-digitally/">
+                            <img width="80" height="80" src="/images/how-to-innovate.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 0">
+                            @L["HOW TO INNOVATE DIGITALLY?"]
+                        </a>
+                        <div>@L["HOW TO INNOVATE DIGITALLY? TEXT"]</div>
+                    </div>
+                    <div style="margin-bottom: 20px">
+                        <a class="footer-link" target="_blank" href="https://www.innovatingdigitally.eu/meet-the-team/">
+                            <img width="80" height="80" src="/images/meet-the-team.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 0">
+                            @L["MEET THE TEAM"]
+                        </a>
+                        <div>@L["MEET THE TEAM TEXT"]</div>
+                    </div>
+                    <div>
+                        <a class="footer-link" target="_blank" href="https://www.innovatingdigitally.eu/how-customer-experience-drives-digital-transformation/">
+                            <img width="80" height="80" src="/images/customer-experince.jpg" style="float: left; margin: 0.3em 0.75em 0.75em 0">
+                            @L["HOW CUSTOMER EXPERIENCE"]
+                        </a>
+                        <div>@L["HOW CUSTOMER EXPERIENCE TEXT"]</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="d-flex flex-column">
+                    <div class="row justify-content-center" style="margin-bottom: 16px">
+                        <img src="/images/erasmus-logo.jpg">
+                    </div>
+                    <p>@L["ERASMUS TEXT"]</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+

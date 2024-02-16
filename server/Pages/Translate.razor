@@ -1,0 +1,93 @@
+﻿@page "/translate"
+
+@using System.IO;
+
+@inject IJSRuntime JS
+@inject ICultureService<App> AppL
+@inject ICultureService<Translate> L
+@inject ResourcesService ResourcesService
+
+@attribute [Authorize(Roles = "translate")]
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="col-10 offset-1">
+            <div class="row">
+                <div class="col-5">
+                    <RadzenHeading Size="H1" Text="@L["Translation"]" />
+                </div>
+            </div>
+
+            <div style="margin-bottom: 1rem" class="row">
+                <div class="col-2">
+                    <RadzenLabel Text="@L["Language:"]" />
+                    <form class="form-inline">
+                        <select class="form-control" style="width: 100%" @bind="@selectedCulture">
+                            @foreach (var culture in Extensions.CULTURES)
+                            {
+                                <option value="@culture.Key">@AppL[@culture.Value]</option>
+                            }
+                        </select>
+                    </form>
+                </div>
+                <div class="col-2">
+                    <div>&nbsp;</div><input type="checkbox" style="margin-right: 0.5rem" @bind="isEdit" />@L["edit mode"]
+                </div>
+                <div class="col-4">
+                    <RadzenLabel Text="@L["Page:"]" />
+                    <RadzenDropDown TValue="string" Style="width:100%" Data=@ResourcesService.Pages @bind-Value="@selectedPage" />
+                </div>
+                <div class="col-4">
+                    <div class="d-flex flex-row justify-content-end align-items-center" style="height: 100%">
+                        <RadzenButton ButtonStyle="ButtonStyle.Primary" Icon="save" Style="margin-right: 1rem" Text="@L["Save"]" Click=@SaveLabels Disabled="isEdit" />
+                        <RadzenButton ButtonStyle="ButtonStyle.Primary" Icon="open_in_browser" Style="margin-right: 1rem; cursor: default" for="fileInput">
+                            <i class="rz-button-icon-left rzi"><!--!-->open_in_browser</i>
+                            <InputFile OnChange="@ImportClick" id="inputFile" hidden />
+                            <label for="inputFile" style="cursor: pointer">@L["Import"]</label>
+                        </RadzenButton>
+                        <RadzenButton ButtonStyle="ButtonStyle.Primary" Icon="save_alt" Text="@L["Export"]" Click=@ExportClick />
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding-top: 1rem; border-top: solid 1px" class="row">
+                @foreach (var entry in resourceSet)
+                {
+                    <div class="col-4">
+                        <div class="d-flex flex-row align-items-center" style="height: 100%">
+                            <RadzenLabel Text=@(ResourcesService.Overlay[selectedCulture][selectedPage][entry.Key]) />
+                        </div>
+                    </div>
+                    <div class="col-8" style="margin-bottom: 5px">
+                        @if (isEdit)
+                        {
+                            <RadzenTextArea id="@entry.Key" style="display: block; width: 100%; height: 100%" @bind-Value="@resourceSet[entry.Key]" />
+                        }
+                        else
+                        {
+                            <RadzenLabel id="@entry.Key" Text="@resourceSet[entry.Key]" />
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </ChildContent>
+</RadzenContent>
+
+@code {
+    bool isEdit = true;
+    string selectedCulture;
+    string selectedPage;
+
+    
+
+    Dictionary<string, string> resourceSet => ResourcesService.Overlay[QuestApp.Extensions.ShortUICultureNameFromCurrent][selectedPage];
+
+    protected override void OnInitialized()
+    {
+        //await JS.InvokeVoidAsync("eval", $@"document.getElementById(""textbox0"").focus()");
+
+        selectedCulture = Extensions.ShortUICultureNameFromCurrent;
+        selectedPage = ResourcesService.Pages.ToList().First();
+    }
+}

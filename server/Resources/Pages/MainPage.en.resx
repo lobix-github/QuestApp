@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Generated reports count" xml:space="preserve">
+    <value>Benchmarking comparisons count</value>
+  </data>
+  <data name="li1" xml:space="preserve">
+    <value>Learn what is the current level of your enterprise’s innovation process digitalisation</value>
+  </data>
+  <data name="li2" xml:space="preserve">
+    <value>Get access to the information on how your position can be improved</value>
+  </data>
+  <data name="li3" xml:space="preserve">
+    <value>Find out what is your position in relation to other enterprises according to criteria of your choice</value>
+  </data>
+  <data name="li4" xml:space="preserve">
+    <value>Track progress of your enterprise’s innovation process digitalisation and how your relative competitive position is changing</value>
+  </data>
+  <data name="Pic Header" xml:space="preserve">
+    <value>DIGITAL INNOVATION BENCHMARKING AUDIT</value>
+  </data>
+  <data name="Pic Text" xml:space="preserve">
+    <value>Learn and benchmark your Innovation Process Digitalisation Index!</value>
+  </data>
+  <data name="Submits count" xml:space="preserve">
+    <value>Submitted surveys count</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>&lt;p&gt;Making the right decisions is critical for all firms’ survival. And it is never easy! But more relevant decisions always come with better information! If you are &lt;b&gt;considering if and when to invest in innovation process digitalisation&lt;/b&gt;, here you will find interesting insights. The benchmark &lt;b&gt;will help you understand your position in comparison to other companies operating in similar context.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Digital Innovation Benchmarking Tool is an innovative, online interactive platform for SMEs to identify their current levels of innovation process digitalisation. This simple, yet powerful tool was designed to help businesses to &lt;b&gt;create a benchmark of where their innovation development process is in terms of utilizing digital tools&lt;/b&gt; which are available, &lt;b&gt;as compared to others.&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Tool analyses the use of digital tools in the enterprise that support innovation management. These include for instance digital solutions that can be used for ideating, collecting and selecting of ideas, building and testing prototypes, collaborating on ideas development, or managing innovation portfolio.&lt;/p&gt;&lt;p&gt;The analysis is mapped across innovation process logic, that was described in detail within the Digital Innovation project, an international initiative started by European scientists and practitioners in 2020, funded by the European Commission from the Erasmus+ program. Go to Digital Innovation website to see a detailed &lt;b&gt;&lt;a href=https://www.innovatingdigitally.eu/audit/ target="_blank"&gt;Digital Innovation Process Audit&lt;/a&gt;&lt;/b&gt;. To inspire yourself on how and which digital tools can be used to facilitate your innovation process go to our &lt;b&gt;&lt;a href=https://www.innovatingdigitally.eu/scanner/ target="_blank"&gt;Digital Innovation Scanner&lt;/a&gt;&lt;/b&gt;!&lt;/p&gt;</value>
+  </data>
+  <data name="Text1Register" xml:space="preserve">
+    <value>&lt;b&gt;&lt;a href=/register&gt;Register&lt;/a&gt; to the platform and get all the benefits!&lt;/b&gt;</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>&lt;p&gt;&lt;b&gt;How does it work?&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Benchmarking Tool is based on a simple &lt;b&gt;survey-based mechanism&lt;/b&gt;, that is aligned with a powerful platform to &lt;b&gt;generate real-time reports automatically comparing the participant with all previous users&lt;/b&gt; without revealing any company-specific data. In addition, as survey results are saved in personalised account, it is also possible to track the digital revolution of innovation process management in a company over time. A single survey can be used for multiple analysis as it is stored always on a private account. The user decides the types of reports to be generated!&lt;/p&gt;</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>&lt;p&gt;The Benchmarking Tool is only available to registered participants and thus the comparative reports remain confidential and are accessible only in your individual profile.&lt;/p&gt;</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>&lt;p&gt;The platform is a scientific project and is based on the highest standards of ethics and confidentiality. Users will not be billed at any stage. Should you have any additional questions, please do not hesitate to contact &lt;b&gt;&lt;a href=/partners&gt;our team&lt;/a&gt;&lt;/b&gt; directly.&lt;/p&gt;&lt;p&gt;Go to &lt;b&gt;&lt;a href=/general&gt;General results&lt;/a&gt;&lt;/b&gt; section to learn current value of Innovation Process Digitalisation Index and how the innovation process digitalisation is changing.&lt;/p&gt;&lt;p&gt;The number and engagement of our users is growing!&lt;/p&gt;</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>Benchmarking Tool by 
+                        &lt;a style="color: #3366ff;" href="https://www.innovatingdigitally.eu/audit/"&gt;Innovating Digitally Consortium&lt;/a&gt;
+                        is licensed under a 
+                        &lt;a style="color: #3366ff;" href="http://creativecommons.org/licenses/by-nd/4.0/" target="_blank"&gt;Creative Commons Attribution-NoDerivatives 4.0 International License&lt;/a&gt;.</value>
+  </data>
+  <data name="Users count" xml:space="preserve">
+    <value>Registered users count</value>
+  </data>
+</root>

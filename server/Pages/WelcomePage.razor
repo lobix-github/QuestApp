@@ -1,0 +1,21 @@
+﻿@page "/welcome"
+
+@inject IStringLocalizer<WelcomePage> L
+
+@attribute [Authorize]
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="pic-container">
+            @*<div class="pic-text">
+                <h1 style="font-size: 72px; margin-bottom: 36px">@L["Pic Header"]</h1>
+                <div style="font-size: 28px">@L["Pic Text"]</div>
+            </div>*@
+        </div>
+
+        <div class="col-10 offset-1 audit-text">
+            <p>@((MarkupString)(L["Text1"].ToString()))</p>
+        </div>
+    </ChildContent>
+</RadzenContent>
+

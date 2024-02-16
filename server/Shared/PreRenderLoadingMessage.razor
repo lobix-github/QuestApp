@@ -1,0 +1,32 @@
+﻿@inherits ComponentBase
+
+@if (HasRendered)
+{
+    @ChildContent
+}
+else
+{
+    <div class="spinner" />
+}
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    [Parameter]
+    public EventCallback<PreRenderLoadingMessage> OnRendered { get; set; }
+
+    private bool HasRendered { get; set; }
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            HasRendered = true;
+            StateHasChanged();
+            await OnRendered.InvokeAsync(this);
+        }
+
+        await base.OnAfterRenderAsync(firstRender);
+    }
+}

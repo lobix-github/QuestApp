@@ -1,0 +1,63 @@
+﻿@page "/general"
+
+@inject IStringLocalizer<GeneralResultsPage> L
+
+<RadzenContent Container="main">
+	<ChildContent>
+        <div class="col-10 offset-1">
+            <RadzenHeading Size="H1" Text="@L["General Results Title"]" />
+
+            @((MarkupString)(L["Text1"].ToString()))
+            <AuthorizeView>
+                <NotAuthorized>
+                    @((MarkupString)(L["Text2"].ToString()))
+                </NotAuthorized>
+            </AuthorizeView>
+
+            <RadzenHeading Size="H2" Text="@L["IPE Title"]" Style="margin-top: 2rem" />
+            <div style="margin-bottom: 1rem">@L["IPE Text"]</div>
+            <div class="row align-items-center margin-bottom">
+                <div class="col-7">
+                    <PreRenderLoadingMessage>
+                        <TableGeneralNoneAnyGraph />
+                    </PreRenderLoadingMessage>
+                </div>
+                <div class="col-5" style="height: 350px">
+                    <PreRenderLoadingMessage>
+                        <GeneralNoneAnyGraph />
+                    </PreRenderLoadingMessage>
+                </div>
+            </div>
+
+            <RadzenHeading Size="H2" Text="@L["IPDC Title"]" Style="margin-top: 2rem" />
+            <div style="margin-bottom: 1rem">@L["IPDC Text"]</div>
+            <div class="row align-items-center margin-bottom">
+                <div class="col-7">
+                    <PreRenderLoadingMessage>
+                        <TableGeneralDoubleNoneAnyGraph />
+                    </PreRenderLoadingMessage>
+                </div>
+                <div class="col-5" style="height: 350px">
+                    <PreRenderLoadingMessage>
+                        <GeneralDoubleNoneAnyGraph />
+                    </PreRenderLoadingMessage>
+                </div>
+            </div>
+
+            <RadzenHeading Size="H2" Text="@L["IPDI Title"]" Style="margin-top: 2rem" />
+            <div style="margin-bottom: 1rem">@L["IPDI Text"]</div>
+            <div class="row align-items-center">
+                <div class="col-7">
+                    <PreRenderLoadingMessage>
+                        <TableGeneralGraph />
+                    </PreRenderLoadingMessage>
+                </div>
+                <div class="col-5" style="height: 350px">
+                    <PreRenderLoadingMessage>
+                        <GeneralGraph />
+                    </PreRenderLoadingMessage>
+                </div>
+            </div>
+        </div>
+	</ChildContent>
+</RadzenContent>

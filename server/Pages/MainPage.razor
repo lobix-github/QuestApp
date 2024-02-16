@@ -1,0 +1,100 @@
+﻿@page "/"
+
+<RadzenContent Container="main">
+    <ChildContent>
+        <div class="pic-container">
+            <div class="pic-text">
+                <h1 style="font-size: 72px; margin-bottom: 36px">@L["Pic Header"]</h1>
+                <div style="font-size: 28px">@CS["Pic Text"]</div>
+            </div>
+        </div>
+
+        <div class="col-10 offset-1">
+            <div class="row">
+                <div class="col-12">
+                    <p>@((MarkupString)(L["Text1"].ToString()))</p>
+                    <AuthorizeView>
+                        <NotAuthorized>
+                            <p>@((MarkupString)(L["Text1Register"].ToString()))</p>
+                        </NotAuthorized>
+                    </AuthorizeView>
+
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-6">
+                            <div class="info-area">
+                                <img src="/images/info1.png" class="info-icon">
+                                <div class="info-text">@L["li1"]</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="info-area">
+                                <img src="/images/info2.png" class="info-icon">
+                                <div class="info-text">@L["li2"]</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px">
+                        <div class="col-6">
+                            <div class="info-area">
+                                <img src="/images/info3.png" class="info-icon">
+                                <div class="info-text">@L["li3"]</div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="info-area">
+                                <img src="/images/info4.png" class="info-icon">
+                                <div class="info-text">@L["li4"]</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>@((MarkupString)(L["Text2"].ToString()))</div>
+                    <AuthorizeView>
+                        <NotAuthorized>
+                            <div>@((MarkupString)(L["Text3"].ToString()))</div>
+                        </NotAuthorized>
+                    </AuthorizeView>
+                    <div>@((MarkupString)(L["Text4"].ToString()))</div>
+
+                    <div class="row">
+                        <div class="col-3 offset-1">
+                            <RadzenIcon Icon="supervisor_account" class="stats-pic" />
+                        </div>
+                        <div class="col-4">
+                            <RadzenIcon Icon="add_chart" class="stats-pic" />
+                        </div>
+                        <div class="col-3">
+                            <RadzenIcon Icon="score" class="stats-pic" />
+                        </div>
+                    </div>
+                    <div class="row stats-text" style="font-size: 7em; font-weight: bold;">
+                        <div class="col-3 offset-1">@($"{usersCount}")</div>
+                        <div class="col-4">@($"{submitsCount}")</div>
+                        <div class="col-3">@($"{generatedReportsCount}")</div>
+                    </div>
+                    <div class="row stats-text">
+                        <div class="col-3 offset-1">@L["Users count"]</div>
+                        <div class="col-4">@L["Submits count"]</div>
+                        <div class="col-3">@L["Generated reports count"]</div>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 100px">
+                        <div>
+                            <a href="http://creativecommons.org/licenses/by-nd/4.0/">
+                                <img class="aligncenter" style="border-width: 0;" src="/images/ccbynd.png">
+                            </a>
+                        </div>
+                        <div>@((MarkupString)(L["Text5"].ToString()))</div>
+                    </p>
+                </div>
+
+@*                <div class="col-4">
+                    <div class="d-flex flex-column">
+                        <News />
+                    </div>
+                </div>*@
+            </div>
+        </div>
+    </ChildContent>
+</RadzenContent>
+

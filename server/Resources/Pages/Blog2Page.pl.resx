@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Source" xml:space="preserve">
+    <value>Source:</value>
+  </data>
+  <data name="Text1" xml:space="preserve">
+    <value>INTRODUCTION</value>
+  </data>
+  <data name="Text1_1" xml:space="preserve">
+    <value>We say that the 21st century is a digital world where everyone can have access to
+technology through computers. Through technology we can see the world, hear about
+the world, read information about the world, write about the world and learn about the
+world with the help of technology.</value>
+  </data>
+  <data name="Text1_2" xml:space="preserve">
+    <value>Thanks to the development of technologies that are made available to us, computers can
+perform different functions according to our needs.</value>
+  </data>
+  <data name="Text1_3" xml:space="preserve">
+    <value>Computers can play an important role by being used as a tool or by providing access to
+instructional materials. Information tools are applications that provide large amounts of
+information in various formats, such as text, sound, image or video.</value>
+  </data>
+  <data name="Text1_4" xml:space="preserve">
+    <value>When we use the computer as an information tool, we are providing you with raw
+material to organise, reorganise and expand your knowledge and skills.</value>
+  </data>
+  <data name="Text2" xml:space="preserve">
+    <value>CREATIVITY AND INNOVATION</value>
+  </data>
+  <data name="Text2_1" xml:space="preserve">
+    <value>The most successful companies today are the most creative and innovative. As a result,
+innovation and creativity have become key skills for success in developed economies.
+To achieve this position, leading companies often tend to distance themselves from the
+competition rather than compete with it (Apple as an example of the blue ocean
+strategy).</value>
+  </data>
+  <data name="Text2_2" xml:space="preserve">
+    <value>In other words, they are able to leverage their own creativity and innovative capacity to
+achieve long-term success. The need for creative problem solving becomes a necessity,
+as more and more management problems require a creative vision to find appropriate
+solutions.</value>
+  </data>
+  <data name="Text2_3" xml:space="preserve">
+    <value>Many examples in practice have shown that companies increase their productivity by
+stimulating creativity and exploring completely new and unknown territories.
+Encouraging employees&amp;#39; creative thinking and giving them the time and resources to
+explore new areas for innovative ideas is the key to finding profitable business
+solutions.</value>
+  </data>
+  <data name="Text2_4" xml:space="preserve">
+    <value>Creativity goes hand in hand with innovation. It can be said that there is no innovation without creativity. While creativity is the ability to produce new and useful ideas, innovation is the application of that creativity, in the form of a new product, service, process and business model. In other words, all innovation starts with a creative idea, and all of this represents a part of the innovation process. Thus, creativity and innovation are used interchangeably, although it could be said that innovation equals implementation. Creativity alone is not enough.</value>
+  </data>
+  <data name="Text2_5" xml:space="preserve">
+    <value>To be successful and to achieve implementation, companies need processes, procedures and structures that enable timely and efficient execution of projects and that allow good ideas to get to the right place.</value>
+  </data>
+  <data name="Text2_6" xml:space="preserve">
+    <value>Today, innovation is becoming a focal point for business success and survival. Therefore, to be more competitive and to realise innovation that meets required objectives and performance expectations, companies must achieve excellence in managing the innovation process.</value>
+  </data>
+  <data name="Text2_7" xml:space="preserve">
+    <value>Delivering innovations with unique benefits and real value to customers separates winners from losers more often than any other factor. Therefore, excellence in innovation projects becomes a necessity, and involves recognition of all the critical elements of success that can affect and, in some way, detract from the process. There are many factors and issues that can influence the success and excellence of an innovation project.</value>
+  </data>
+  <data name="Text3" xml:space="preserve">
+    <value>EFFECTIVENESS</value>
+  </data>
+  <data name="Text3_1" xml:space="preserve">
+    <value>Effective time management is a critical factor in the success of most projects. In most projects, time (i.e. schedule) becomes a determining factor in signalling when something goes wrong or gets out of control. The challenge for projects involving major innovation is that one or more critical activities may be of unknown duration or involve factors outside the normal design process.</value>
+  </data>
+  <data name="Text3_2" xml:space="preserve">
+    <value>Innovation project managers need to distinguish between activities or work packages that are part of "business as usual" and those that are not. They need to identify and quantify schedule risks and develop strategies to mitigate them.</value>
+  </data>
+  <data name="Text3_3" xml:space="preserve">
+    <value>Reliable, repeatable and measurable indicators are essential to assess the success or failure of a project or innovative initiative. Without the right metrics, we may be judging as a success what is actually being a failure, or the other way around. At the project level, knowing what to measure, how and when provides us with the ability to control, and not least, it provides visibility and transparency in the management of the project. The chosen management methodology itself will lead us directly to the indicators that are most effective.</value>
+  </data>
+  <data name="Text4" xml:space="preserve">
+    <value>PROJECT MANAGEMENT</value>
+  </data>
+  <data name="Text4_1" xml:space="preserve">
+    <value>The main purpose of project management is the planning, monitoring and control of the activities and human and material resources involved in the development of a project. As a result of this control, it is possible to know at all times what problems are occurring and to solve them immediately.</value>
+  </data>
+  <data name="Text4_2" xml:space="preserve">
+    <value>Innovation management has been a topic of great interest in the last decade because of its value in bringing game-changing ideas and shaping the way we do business. Innovation management is something to be reckoned with, from industry breakthroughs to utilising the creativity of the workforce.</value>
+  </data>
+  <data name="Text5" xml:space="preserve">
+    <value>IMPLEMENTATION</value>
+  </data>
+  <data name="Text5_1" xml:space="preserve">
+    <value>Implementation is the culminating process of innovation project management. Implementing a process improvement or a new product implies substantial differences in the management, measurement and analysis of these projects.</value>
+  </data>
+  <data name="Text5_2" xml:space="preserve">
+    <value>The traditional role of project management is to put in place a process that avoids failure. Such processes are comforting to companies and help ensure predictability. Ensuring that projects are completed on time, on budget and within scope is a major challenge.</value>
+  </data>
+  <data name="Text5_3" xml:space="preserve">
+    <value>The trick is to find a strategy that allows for oversight but does not stifle creativity.</value>
+  </data>
+  <data name="Text5_4" xml:space="preserve">
+    <value>Source: Alan Webb (2017). Project Management for Successful Product Innovation.</value>
+  </data>
+  <data name="Text5_5" xml:space="preserve">
+    <value>The external world has a role to play in the whole process and the higher the profile of the project or the more advanced the technology involved, the more significant the process of managing the external dimensions. Involving the technology itself, the expectations of society and the risks that exist with new ventures. Taking a step beyond time, cost and performance by taking them into account at all times.</value>
+  </data>
+  <data name="Text5_6" xml:space="preserve">
+    <value>Today, the importance of innovation within a company is clear. Information systems, new communication and transport technologies make existing technology available to everyone in a very short time. This is why innovation becomes a source of sustainable differentiation for companies.</value>
+  </data>
+  <data name="Text6" xml:space="preserve">
+    <value>THE INNOVATION PROCESS</value>
+  </data>
+  <data name="Text6_1" xml:space="preserve">
+    <value>The innovation process in a company can be divided into two parts. The creative part and the application part. The first part is where ideas must be generated. For the first part, creativity techniques are applied to try to generate as many ideas as possible.</value>
+  </data>
+  <data name="Text6_2" xml:space="preserve">
+    <value>The second part of the process is basically about project management, where the objective is to turn the ideas selected in the first part of the process into reality. To achieve this goal, use can be made of IT tools that can help to make the process easier and faster.</value>
+  </data>
+  <data name="Text6_3" xml:space="preserve">
+    <value>Innovation management includes a set of tools that allow managers and workers or users to cooperate with a common understanding of processes and objectives. Innovation management enables the organisation to respond to external or internal opportunities and to use its creativity to introduce new ideas, processes or products. It is not relegated to R&amp;D; it involves workers or users at all levels to contribute creatively to the development and marketing of an organisation's products or services.</value>
+  </data>
+  <data name="Text6_4" xml:space="preserve">
+    <value>In innovation management, various methodologies and techniques can be used in the different phases that constitute the innovation process in order to cope with the associated risk and to manage the process appropriately for better efficiency. These methodologies and techniques are known as Innovation Management Tools. Each of them has its own characteristics, its particular method of application and, depending on their most distinctive peculiarities, they will be implemented in different phases of the innovation process.</value>
+  </data>
+  <data name="Text6_5" xml:space="preserve">
+    <value>The use of these tools stimulates strategic thinking and facilitates the identification of areas in need of improvement. They are a valid instrument for the organisation to identify weaknesses, threats, strengths and opportunities and they enhance the importance of the human aspect in the whole innovation process.</value>
+  </data>
+  <data name="Text6_6" xml:space="preserve">
+    <value>There are computer tools for control, planning and budget management that help in project management tasks. In these tools, what is basically done is to specify each one of the tasks and for each one of them also define a series of characteristics, such as the order of execution, assigned resources, people responsible, cost, duration, etc. This gives us a plan of the entire project. So, what the IT tools provide is an interface so that users can easily enter this data. Once this data has been entered, what most of these tools provide is an easy way to visualise the project plan, generally by means of a Gantt chart, which is nothing more than a list of tasks and their graphical representation by means of bars on a calendar, which allows us to easily visualise the chronological order of the tasks and above all to identify the duration and completion dates of each of them and of the project in general.</value>
+  </data>
+  <data name="Text6_7" xml:space="preserve">
+    <value>These tools can be integrated with collaboration tools, facilitating project control. Many of them are implemented in web technology, so they can be available to all team members anywhere with only Internet access. Others allow information to be published in reports that can be posted on the Internet. The most important points that these tools should offer are an easy way to feed and modify the tasks and stages of which a project is composed and to provide a way to easily visualise the project plan or a part or stage of the project, preferably in a graphical way. Some planning tools additionally offer modules to analyse deviations from the original plan and to report on the use of resources used in the project and a few other things offer added value to project management.</value>
+  </data>
+  <data name="Text7" xml:space="preserve">
+    <value>R&amp;D</value>
+  </data>
+  <data name="Text7_1" xml:space="preserve">
+    <value>Innovation is important and rather necessary for the survival of companies, but often lack of resources makes it difficult especially for SMEs to develop R&amp;D activities. New R&amp;D project management methodologies point out the advantages of using IT tools and recommend their integration into the innovation process of companies to speed up its development.</value>
+  </data>
+  <data name="Text7_2" xml:space="preserve">
+    <value>Some free or low-cost software tools can be very useful for companies with few resources and that want to improve their innovation and research processes, if they are integrated into their R&amp;D project management methodologies.</value>
+  </data>
+  <data name="Text7_3" xml:space="preserve">
+    <value>Collaboration, storage, information sharing and networked file and data sharing tools provide teams with the information they need when they need it, and also function as good knowledge management tools.</value>
+  </data>
+  <data name="Text7_4" xml:space="preserve">
+    <value>Project planning and tracking tools increase the effectiveness of R&amp;D project development and allow for easy planning of human and financial resources prior to the start of project execution.</value>
+  </data>
+  <data name="Text7_5" xml:space="preserve">
+    <value>Task tracking tools facilitate the development of activities within any project, but even more so when the teams are distributed or very large and help to control tasks allowing easy task management.</value>
+  </data>
+  <data name="Text7_6" xml:space="preserve">
+    <value>In general, we can say that these tools present multiple advantages to the innovation process within companies without being complicated or requiring complex IT knowledge, as they are easy to install, operate and maintain. One of the main advantages is that many of these tools are available at no or very low licensing costs and are accessible to companies of any size. Their use and integration with R&amp;D project management methodologies is highly recommended.</value>
+  </data>
+  <data name="Text8" xml:space="preserve">
+    <value>CONCLUSION</value>
+  </data>
+  <data name="Text8_1" xml:space="preserve">
+    <value>Information and Communication Technologies (TIC) have dizzyingly transformed the daily and social life of human beings, some examples are the use of mobile phones, computers, the internet and its communication tools, digital television, applications such as Google earth, Google maps, virtual museums, among others, which allow us to get to know a place without having physically been there.</value>
+  </data>
+  <data name="Text8_2" xml:space="preserve">
+    <value>These transformations have been permeating the professional and educational spheres to facilitate our performance in several areas, one of which has to do with access to information, another with data processing, and another with immediate communication to disseminate information or to contact anyone anywhere in the world.</value>
+  </data>
+  <data name="Text8_3" xml:space="preserve">
+    <value>Nowadays, creativity and innovation cannot be left aside in companies, as these elements contribute to commercial empowerment, economic growth, empowerment of brands, products, goods and services of companies and the incursion into new markets.</value>
+  </data>
+  <data name="Text8_4" xml:space="preserve">
+    <value>Creativity and innovation should coexist hand in hand, because, although they are two different elements, they are more effective when they are collectively enhanced.</value>
+  </data>
+  <data name="Text8_5" xml:space="preserve">
+    <value>Creativity at a business level creates novel alternatives that favour the continuous improvement of companies by inferring the changes to be made. From this perspective, it could be inferred that creativity at a business level is the particular stamp or seal with which each corporation or company makes itself visible in national or international markets. That is to say, creativity is like an idealisation of how the company thinks about maintaining high competitive levels, while innovation is fundamental because it crystallises these original or authentic ideas into tangible products, goods, services or policies. Hence, both creativity and innovation enhance economic growth and consolidation, the opening up of better services-products, and optimal solutions to risks that arise in a changing and highly competitive market.</value>
+  </data>
+  <data name="Text8_6" xml:space="preserve">
+    <value>The proper application of planning and control techniques is fundamental for the efficiency of project management. These techniques become more relevant as projects become more complex and require more resources.</value>
+  </data>
+  <data name="Text8_7" xml:space="preserve">
+    <value>In a project, it is important to detect the real needs of the people who work day to day with the systems and IT tools, that the operational processes of a company are attached to the reality of daily work and are not a bureaucratic obstacle, that users are involved in the process of implementing the systems so that it is known what they expect and what they do not expect from it, to define clearly and as tangibly as possible the economic, employment and other benefits to be achieved with the new systems, so that people within the company know how they will particularly benefit from them.</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>HOW IS IT POSSIBLE TO
+IMPLEMENT CREATIVITY AND
+INNOVATION IN THE USE OF IT
+
+TOOLS?</value>
+  </data>
+</root>
