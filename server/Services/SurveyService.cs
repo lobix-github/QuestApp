@@ -9,10 +9,11 @@ namespace QuestApp.Services
         public SurveyService(DBService dbService)
         {
             Quest = dbService.GetQuestionnaire().Result;
+            AnswerIds = Quest.Sections.SelectMany(section => section.Categories.SelectMany(cat => cat.Questions.Select(q => q.SelectedAnswerId)));
         }
 
         public QuestionnaireDTO Quest { get; }
 
-        public IEnumerable<int> AnswerIds => Quest.Sections.SelectMany(section => section.Categories.SelectMany(cat => cat.Questions.Select(q => q.SelectedAnswerId)));
+        public IEnumerable<int> AnswerIds { get; }
     }
 }
