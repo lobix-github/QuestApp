@@ -120,6 +120,22 @@
   <data name="Audit Page" xml:space="preserve">
     <value>Audit</value>
   </data>
+  <data name="Blog1Title" xml:space="preserve">
+    <value>The support of IT tools for the needs of creativity, ideation, and idea management</value>
+  </data>
+  <data name="Blog2Title" xml:space="preserve">
+    <value>HOW IS IT POSSIBLE TO
+IMPLEMENT CREATIVITY AND
+INNOVATION IN THE USE OF IT
+
+TOOLS?</value>
+  </data>
+  <data name="Blog3Title" xml:space="preserve">
+    <value>Innovative initiative evaluation</value>
+  </data>
+  <data name="Blog4Title" xml:space="preserve">
+    <value>The power of employees and people</value>
+  </data>
   <data name="CONTACT" xml:space="preserve">
     <value>KONTAKT</value>
   </data>
