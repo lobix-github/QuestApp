@@ -211,6 +211,9 @@ TOOLS?</value>
   <data name="Profile Page" xml:space="preserve">
     <value>Profile</value>
   </data>
+  <data name="RECENT POSTS" xml:space="preserve">
+    <value>Recent Posts</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Register</value>
   </data>
