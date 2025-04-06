@@ -35,9 +35,9 @@
             <div style="margin-bottom: 40px">
                 @Body
             </div>
-            <div class="hideWhenPrint">
+@*             <div class="hideWhenPrint">
                 <Footer />
-            </div>
+            </div> *@
         </RadzenContentContainer>
     </ChildContent>
 </RadzenBody>
@@ -45,13 +45,13 @@
     <ChildContent>
         <RadzenPanelMenu style="height: 100%">
             <ChildContent>
-                <div>
+@*                 <div>
                     <img id="logo" src="/images/logo.png" />
-                </div>
+                </div> *@
                 <div class="hideWhenPrint">
                     <RadzenPanelMenuItem Text="@L["Main Page"]" Path="/" Icon="home" />
                     <RadzenPanelMenuItem Text="@L["General Results Page"]" Path="/general" Icon="leaderboard" />
-                    <RadzenPanelMenuItem Text="@L["Partners Page"]" Path="/partners" Icon="account_balance" />
+                    @* <RadzenPanelMenuItem Text="@L["Partners Page"]" Path="/partners" Icon="account_balance" /> *@
                     <AuthorizeView>
                         <RadzenPanelMenuItem Text="@L["Survey Page"]" Path="/survey" Icon="add_chart" />
                         <RadzenPanelMenuItem Text="@L["Results Page"]" Path="/results" Icon="score" />
